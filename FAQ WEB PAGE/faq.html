@@ -1,0 +1,212 @@
+<!--YAP SHI QI-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="faq.css">
+    <link href="../navigation bar/feedback popout/feedback.css" rel="stylesheet" />
+    <link href="../navigation bar/login sign in popout/logsign.css" rel="stylesheet"/>
+    <link href="../navigation bar/navigation bar.css" rel="stylesheet"/>
+    <script type="text/javascript" src="../navigation bar/login sign in popout/loginsignin.js"></script>
+    <script type="text/javascript" src="../navigation bar/feedback popout/feedback.js"></script>
+    <link href="../footer/footer.css" rel="stylesheet"/>
+    <!-- <script type="text/javascript" src="../general/general.js"></script> -->
+    <link href="../general/general.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    
+      <!-- navigation bar -->
+      <header>        
+        <nav>
+            <ul> 
+                <img src ="../navigation bar/logo.png" alt="moonstreet restaurant" />
+                <li><a href="../home/homepage.html">HOME</a></li>
+                <li><a href="../menu/html/menu.html">MENU</a></li>
+                <li><a href="../event/event.html">EVENT</a></li>
+                <li><a href="../Booking/booking.html">RESERVATION</a></li>
+                <li><a href="../about us/about.html">ABOUT US</a></li>
+                <li><a href="/JoinUs/hiring.html">JOIN US</a></li>
+                <li><a href="../customer feedback web page/customer feedback.html">CUSTOMER REVIEWS</a></li>
+                <li><a href="../FAQ WEB PAGE/faq.html">FAQ</a></li>
+                <li><div class="login" onclick="openForm()" id="openbtn">&#128100;</div></li>
+                <li><div class="customer_review" onclick="feedback()">&#128172;</div></li>
+            </ul>
+        </nav>
+    
+        <!--login sign in pop out form   -->          
+        <div class="form-container" id="popupform">
+            <div class="form-head">
+                <button type="button" class="login" id="login" onclick="login()">Login</button>
+                <button type="button" class="register" id="register" onclick="register()">Register</button>
+            </div>
+            <div class="form-content">
+            <form class="login-form" id="loginform">
+                <div class="field">
+                User ID
+                <input type="text" id="userid" placeholder="User Id" required>
+                </div>
+                <div class="field">
+                Password
+                <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="loginBtn">Login</button>
+            </form>
+            <form class="register-form" id="registerform">
+                <div class="field">
+                    User ID
+                    <input type="text" id="userid" placeholder="User Id" required>
+                </div>
+                <div class="field">
+                    Email
+                <input type="text" id="newemail" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    Password 
+                <input type="password" id="newpassword" placeholder="Password" required>
+                </div>
+                <button type="submit" class="registerBtn">Register</button>
+            </form>
+            </div>
+        </div>
+    
+            <!-- give feedback pop out form -->
+            <div class="give-feedback-container" id="feedbackform">
+                <form>
+                    <h1>Give Your Feedback</h1>
+                    <div class="star-widget">
+                        <input type="radio" name="rate" value="1" id="rate-1" onclick="myFunction(this.value)">
+                        <label for="rate-1" >&#9733;</label>
+                        <input type="radio" name="rate" value="2" id="rate-2" onclick="myFunction(this.value)">
+                        <label for="rate-2" >&#9733;</label>
+                        <input type="radio" name="rate" value="3" id="rate-3" onclick="myFunction(this.value)">
+                        <label for="rate-3">&#9733;</label>
+                        <input type="radio" name="rate" value="4" id="rate-4" onclick="myFunction(this.value)">
+                        <label for="rate-4">&#9733;</label>
+                        <input type="radio" name="rate" value="5" id="rate-5" onclick="myFunction(this.value)">
+                        <label for="rate-5">&#9733;</label>
+                    </div>
+                        <input type="text" id="nameBox" placeholder="USERNAME">
+                        <input type="email" id="mailBox" placeholder="EMAIL ADDRESS">
+                        <input type="opinion" id="opinionBox" placeholder="ENTER YOUR OPINION HERE...">
+                    <button onclick="sendOpinion()">SEND</button>
+                </form>
+            </div>
+    
+    </header>
+    
+    <section class="faq">
+        <h1>FAQs</h1>
+        <ul>
+            <li>
+                <label for="first">Where’s the Restaurant Located?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="first" checked>
+                <div class="content">
+                    <p>Moonstreet is an authentic western food restaurant at Danau Kota which is in the heart of Setapak and it is near to TARUC(Tunku Abdul Rahman University College)</p>
+                </div>
+            </li>
+
+            <li>
+                <label for="second">What are the Hours of Operation?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="second">
+                <div class="content">
+                    <p>Our resraurant will be open from 12pm afternoon to night 9pm for every monday to friday and 12pm afternoon to night 12am for every weekend and public holiday</p>
+                </div>
+            </li>
+
+            <li>
+                <label for="third">What's that Users can do by using this restaurant website?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="third">
+                <div class="content">
+                    <p>Users can know more about our Moonstreet Restaurant virtually.If you are interested, you may book tables online ahead of time to prevent overcrowding. You may also order our food online  and we will deliver it to your doorstep since we provided food delivery services.</p>
+                </div>
+            </li>
+
+            <li>
+                <label for="fourth">What happens if i am running late?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="fourth">
+                <div class="content">
+                    <p>Call our restaurant and inform us that you will getting late for your reservation.Normally we will hold a booking for at least twenty minutes before reassigning your table.</p>
+                </div>
+            </li>
+
+            <li>
+                <label for="fifth">How much do i have to pay for my booking?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="fifth">
+                <div class="content">
+                    <p>Absolutely nothing! All bookings made through Restaurant Hub are free to the cunsumer.</p>
+                </div>
+            </li>
+
+            <li>
+                <label for="sixth">How do i cancel booking?<span>&#x3e;</span></label>
+                <input type="radio" name="faqs" id="sixth">
+                <div class="content">
+                    <p>To help our restaurants manage their sittings we ask our diners to give at least 24hours notice of any cancellations.You can do this by calling our restaurant.
+
+                    If you need to cancel less than 24hours before your dinner date you can use the cancellation link within your reminder email(sent 24hours before your reservation time).We also encourage our diners to follow this up with a call direct to the restaurant.
+
+                    To amend a booking please call the restaurant direct,again endeavouring to give at least 24 hours' notice.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="question">
+     <p>If you have any further questions,welcome to contact us: </p>
+     <p>Call : <a href="tel:+60123456789"> 012-345-6789</a></p>
+     <p>Email:<a href="mailto:moonstreet@gmail.com"> moonstreet@gmail.com</a></p>
+
+    </div>
+
+    <!-- button for go to top of web page -->
+<div class="top">
+    <button id="top-btn" onclick="topFunction()">&#708;</button>
+</div>
+
+<div class="live-chat">
+    <input type="image" id="live-chat" src="../JoinUs/livechat.png" style="width:3%;"/>
+</div>
+<div id="chatBot">
+    <iframe style="display:none;bottom:10px;left:37%;position:fixed;" id="chatBox" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c2abacae-163c-47b3-ab0b-a205b2f6a457"></iframe>
+</div>
+
+    <footer style="position:absolute; bottom:0%;">
+        <div class="description">
+        <img src="../navigation bar/logo.png" alt="moonstreet restaurant logo"/>
+        <h2>MOONSTREET RESTAURANT<br></h2>
+        <h3>GOOD MEALS &nbsp;<span style="color:white;">|</span> &nbsp;PERFECT SERVICES</h3>
+        <h3>COMFORTABLE ENVIRONMENT &nbsp;<span style="color:white;">|</span> &nbsp; EXCELLENT CHEF </h3>
+        </div>
+        
+        <div class="col">
+            <div class="col-1">
+            <h3>LOCATION<br></h3>
+            <p>PV128,Taman Danau Kota,53100,Kuala Lumpur</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5902930698126!2d101.71448980373724!3d3.2017899194314823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38055c339127%3A0x28594ae085be3d10!2sPV%20128!5e0!3m2!1szh-CN!2smy!4v1662544354158!5m2!1szh-CN!2smy" 
+            width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-2">
+                <h3>CONTACT<br></h3>
+                <a href="tel:+6012-345-6789">012-345-6789</a>
+            </div>
+            <div class="col-3">
+            <h3>GMAIL<br></h3>
+            <a href="mailto:moonstreet@gmail.com">moonstreet@gmail.com</a>
+            </div>
+            <div class="col-4">
+            <h3>SOCIAL MEDIA<br></h3>
+            <div class="icon"><img src="../footer/pic/fb.png" style="width:35px;height:35px;" alt="facebook">Moonstreet Restaurant<br></div>
+            <div class="icon"><img src="../footer/pic/ins.png" style="width:35px;height:35px;"alt="instagram">Moonstreet Restaurant<br></div>
+            <div class="icon"><img src="../footer/pic/whatsapp.png" style="width:35px;height:35px;" alt="whatsapp">012-345-6789</div>
+            </div>
+        </div>
+     </footer>
+
+</body>
+<script src="../general/general.js"></script>
+</html>

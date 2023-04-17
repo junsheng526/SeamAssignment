@@ -1,0 +1,198 @@
+@font-face{
+    font-family:poppins-medium;
+    src:url(../Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins-medium;   
+}
+
+body{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background-color:#161623;
+}
+
+/* Design for input field*/
+.field {
+    color: #fff; 
+}
+
+/* Design for Delivery form, Pick up form and Payment form */
+.cartForm,
+.payment-form{
+    width:440px;
+    height:750px;
+    top:100px;
+    border:1px solid black;
+    margin:0% auto;
+    position:relative;
+    padding:5px;
+    background-color:rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow:hidden;
+} 
+
+.payment-form{
+    display:none;
+}
+
+.payment-form .payment{
+    text-align: center;
+}
+
+.del-form,
+.pickup-form{
+    position:absolute;
+    width:380px;
+    transition:.5s;
+}
+
+.del-form{
+    left:20px;
+}
+
+.pickup-form{
+    left:450px;
+}
+
+/* Deisgn for title of delivery form and pick up form */
+.cart-head button{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline:none;
+    line-height:30px;
+    margin-left:13.5%;
+    letter-spacing:1.5px;
+}
+
+.cart-head{
+    border-bottom:1px solid #fff; 
+    width:100%;
+}
+
+.payment-form .title{ 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-head .delivery{
+    color:#5BC0BE;  
+}
+
+.cart-head .pickup{
+    color:#fff;  
+}
+
+/* Design for Delivery form and Pick up form's field */
+.cart-content .field{
+    padding:4px;
+}
+
+fieldset #timeBox{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    color:white;
+}
+
+#timeBox option{
+    font-family:monospace;
+    color:white;
+    background-color:black;
+}
+
+.cart-content input,
+.inputgroup input{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    width:180px;
+    border-bottom:2px solid #8d99ae;
+    font-size:13px;
+    color:#fff; 
+}
+
+.cart-content input:focus,
+.inputgroup input:focus{
+    border-bottom:2px solid #2b2d42;
+    transition:.5s;
+}
+
+.cart-content input::placeholder,
+.inputgroup input::placeholder{
+    color:grey;
+}
+
+/* Design for next button */
+.nextBtn{
+    cursor:pointer;
+    padding:4px;
+    border:1px solid transparent;
+    border-radius:8px;
+    color:#161623; 
+    background-color:#fff; 
+    font-weight:bold;
+    margin-top:50px;
+    margin-left:160px;  
+}
+
+.confirmBtn,
+.cancelBtn{
+    cursor:pointer;
+    padding:4px;
+    border:1px solid transparent;
+    border-radius:8px;
+    color:#161623; 
+    background-color:#fff; 
+    font-weight:bold;
+    margin-top:50px;
+    margin-left:20%; 
+}
+
+.nextBtn:hover,
+.confirmBtn:hover,
+.cancelBtn:hover{
+    color:#161a1d;
+    background-color:#5BC0BE; 
+    transition:.3s;
+}
+
+/* Design for Payment form's content */
+fieldset label,
+.payment-form label{
+    color: #fff;
+}
+
+.payment-form h2{
+    color:#fff;
+}
+
+.payment-form .container{
+    padding:5px;
+}
+
+.inputgroup{
+    margin-left: 30px;
+}
+
+/* Design for Privacy & policy and Terms and Conditions's link */
+.ptgroup a{
+    text-decoration:none;
+    color:white;
+    margin-left:10%;
+}
+
+.ptgroup a:hover{
+    color:#5BC0BE;
+    transition:.3s;
+}
+
+.button-group a{
+    text-decoration: none;
+}

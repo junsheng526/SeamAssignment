@@ -1,0 +1,244 @@
+@font-face{
+    font-family:poppins-medium;
+    src:url(/Poppins/Poppins-Medium.ttf)format('truetype');
+}
+
+@font-face{
+    font-family:poppins-black;
+    src:url(/Poppins/Poppins-Black.ttf)format('truetype');
+}
+
+html{
+    scroll-behavior:smooth;
+    background-color:#161626;
+    width:1024px;
+    height:768px;
+    margin:auto;
+    padding: 0;
+    border:0px;
+}
+
+/* Determine the height, width and display for each section */
+#section1{
+    height:70%;
+    width:100%;
+    display:inline-block;
+}
+
+#section2{
+    height:70%;
+    width:100%;
+    display:inline-block;
+}
+
+#section3{
+    height:50%;
+    width:100%;
+    display:inline-block;
+}
+
+/* Design for position offered and information box */
+.details{
+    clear:left;
+    background-color:#fff;
+    padding:8px;
+}
+
+.details .detailtitle{
+    color:#000;
+    text-align:center;
+    text-decoration:overline;
+    text-transform:uppercase;
+    font-family:monospace;
+}
+
+.details .detailtitle h3{
+    padding-top:10px;
+}
+
+.position{
+    display:inline;
+    margin-left:17.5%;
+    font-family:poppins-medium;
+    font-size:15px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+.position a{
+    text-decoration:none;
+    color:#000;
+}
+
+.position a:hover{
+    border-bottom:2px solid #000;
+    transition:.2s;
+}
+
+.info-one,
+.info-two{
+    display:inline-block;
+}
+
+.info-three,
+.info-four{
+    display:inline-block;
+}
+
+.informations ul li{
+    list-style:none;
+}
+
+.info-one,
+.info-two,
+.info-three,
+.info-four{
+    margin-left:10%;
+    line-height:25px;
+    font-family:poppins-medium;
+} 
+
+.info-two{
+    margin-left:19%;
+}
+
+.info-four{
+    margin-left:17.2%;
+}
+
+/* Design for the content of this page */
+body h1{
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    letter-spacing:2px;
+    font-family:poppins-black;
+    text-decoration:underline;
+}
+
+#section1 .text1{
+    margin-top:2%;
+}
+
+#section2 .text2{
+    margin-left:60%;
+    text-align:left;
+}
+
+#section1 .text1,
+#section2 .text2,
+#section3 .text3{
+    color:#fff;
+    font-size:20px;
+    line-height:25px;
+    letter-spacing:1px;
+    width:40%;
+}
+
+#section1 .button1 .joinBtn{
+    margin-left:12%;
+    margin-top:3%;
+}
+
+#section2 .button2 .joinBtn{
+    margin-left:72%;
+    margin-top:-1%;
+}
+
+#section3 .button3 .joinBtn{
+    margin-left:12%;
+    margin-top:3%;
+}
+
+#section1 .button1 .joinBtn,
+#section2 .button2 .joinBtn,
+#section3 .button3 .joinBtn{
+    border:none;
+    outline:none;
+    background-color:#fff;
+    border-radius:10px;
+    color:#000;
+    padding:10px;
+    font-size:14px;
+    font-family:poppins-medium;
+}
+
+#section1 .button1 .joinBtn:hover,
+#section2 .button2 .joinBtn:hover,
+#section3 .button3 .joinBtn:hover{
+    background: -webkit-linear-gradient(left, #87F4B5,#93CBF1);
+    color:#fff;
+    transition:.2s;
+}
+
+/* Design for the job application form */
+form{
+    font-family:poppins-black;
+    color:#000;
+    background-color:#fff;
+    width:25%;
+    padding:8px;
+    top:200px;
+    margin-left:4%;
+    z-index:41;
+    border:2px solid #000;
+    box-shadow:5px 5px 7px rgba(0,0,0,0.5);
+    position:absolute;
+    display:none;
+}
+
+form h1{
+    font-family:poppins-medium;
+    color:#000;
+}
+
+form input{
+    border:none;
+    outline:none;
+    border-bottom:2px solid #000;
+    background-color:transparent;
+}
+
+form .position,
+form .time,
+form .language{
+    font-family:poppins-medium;
+}
+
+form .position{
+    margin-left:0.5%;
+}
+
+form .chooseBtn button{
+    margin-left:3.5%;
+    border:none;
+    outline:none;
+    background-color:#161626;
+    border-radius:10px;
+    color:#fff;
+    padding:8px;
+    font-size:14px;
+    font-family:poppins-medium;
+}
+
+form .chooseBtn button:hover{
+    background: -webkit-linear-gradient(left,#9BAFD9,#103783);
+    color:#fff;
+    transition:.2s;
+}
+
+form .closeForm{
+    background-color:transparent;
+    color:#000;
+    float:right;
+    margin-top:-12%;
+    margin-right:2px;
+    font-size:20px;
+    border:none;
+}
+
+form .closeForm:hover{
+    font-size:23px;
+    transition:.2s;
+}
