@@ -1,0 +1,166 @@
+@font-face{
+    font-family:poppins-medium;
+    src:url(/Poppins/Poppins-Medium.ttf)format('truetype');
+}
+
+@font-face{
+    font-family:poppins-semibold;
+    src:url(/Poppins/Poppins-SemiBold.ttf)format('truetype');
+}
+
+html{
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    border:0px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Design for the body of the website*/
+body{
+   
+    width:auto;
+    height:auto;
+    background-color:#161626;
+}
+
+/*Design for the reservation form*/
+.booking form{
+    clear:left;
+    border:1px solid rgba(7,7,7,0.2);
+    border-radius:5px;
+    box-shadow:5px 6px 5px rgba(0,0,0,0.3);
+    width:80%;
+    margin:4% auto;    
+    background-color:white;
+    padding:5px;
+}
+
+/*Design for the form title*/
+.booking form h2{
+    text-align:center;
+    padding:5px;
+    font-family:poppins-semibold;
+    letter-spacing:0.7px;
+    font-size:20px;
+}
+
+/*Design for the title of the information of user*/
+.custInfo label{
+     font-family:monospace;
+     font-size:15px;
+}
+
+/*Design the space for user to key in their information*/
+.booking form .custInfo input {
+    border:none;
+    outline:none;
+    width:160px;
+    border-bottom:2px solid #8d99ae;
+    font-size:13px;
+}
+
+/*Design the space for user to key in their information while user click on it*/
+.booking form .custInfo input:focus{
+    border-bottom:2px solid #2b2d42;
+    width:200px;
+    transition:.5s;
+}
+
+.booking form .custInfo input::placeholder{
+    color:rgba(0,0,0,0.5);
+}
+
+/*Design for field number of pax, date and timeslot*/
+fieldset{
+    padding:3px;
+    border:2px solid #8d99ae;
+}
+
+/*Design for field number of pax, date and timeslot while user click on it*/
+fieldset:hover{
+    border:2px solid #2b2d42;
+}
+
+/*Design for fieldset's title*/
+fieldset legend{
+    font-family:monospace;
+    font-size:14px;
+}
+
+/*Design for fieldset*/
+fieldset #paxBox,
+fieldset #dateBox,
+fieldset #timeBox{
+    width:100%;
+    border:none;
+    outline:none;
+}
+
+/*Design for the font of the option inside the timeslot*/
+#timeBox option{
+    font-family:monospace;
+}
+
+/*Design for the box of the information of restaurant*/
+.restInfo{
+    text-align:center;
+    font-family:poppins-medium;
+    font-size:15px;
+    background-color:#bcb8b1;
+}
+
+/*Design for the information of restaurant*/
+.restInfo .restTime,
+.restInfo .restNum{
+    display:inline-block;
+    border-radius:5px;
+    padding:5px;
+    background-color:rgba(0,0,0,0.15);
+    cursor:pointer;
+    color:white;
+    letter-spacing:1px;
+}
+
+/*Design for the information of restaurant while the mouse of user pass through it*/
+.restInfo .restTime:hover,
+.restInfo .restNum:hover{
+    background-color:rgba(0,0,0,0.3);
+    transition:.4s;
+}
+
+/*Design for confirm and cancel button become one line*/
+.confirmReserve,
+.cancelReserve{
+    display:inline-block;
+}
+
+/*Design for confirm and cancel button*/
+.confirmReserve input,
+.cancelReserve input{
+    cursor:pointer;
+    padding:4px;
+    border:1px solid transparent;
+    border-radius:8px;
+    color:#d3d3d3;
+    background-color:#161a1d;
+    font-family:monospace;
+    letter-spacing:0.3px;
+}
+
+/*Design for confirm and cancel button while the mouse of user pass through it*/
+.confirmReserve input:hover,
+.cancelReserve input:hover{
+    color:#161a1d;
+    background-color:#d3d3d3;
+    transition:.3s;
+}
+
+/*Design for every div*/
+.booking div{
+    padding:4px;
+}

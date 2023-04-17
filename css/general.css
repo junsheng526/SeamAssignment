@@ -1,0 +1,47 @@
+/* Design for scrollbar */
+html::-webkit-scrollbar{
+    width:8px;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background:white;
+
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* Design for button to scroll to the top of the page */
+.top #top-btn{
+    color:#000;
+    position:fixed;
+    bottom:10px;
+    left:64%;
+    z-index:99;
+    font-size:30px;
+    font-weight:bold;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    background-color:#fff;
+    cursor:pointer;
+    padding:0.5% 1%;
+    margin: auto;
+    /* display:none; */
+}
+
+.top #top-btn:hover{
+    color:#fff;
+    background-color:#000;
+}
+
+
+/* Design for live chat's button */
+.live-chat input{
+    position:fixed;
+    bottom:10px;
+    left:33.3%;
+    z-index:1;
+}

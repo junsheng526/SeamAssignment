@@ -1,0 +1,130 @@
+@font-face {
+    font-family: poppins-black;
+    src: url(../../Poppins/Poppins-Black.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family:poppins-medium;
+    box-sizing:border-box;
+  
+}
+
+/* css for the pop up form that customers give their feedback */
+.give-feedback-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-65% -50%;
+    width:360px; 
+    align-items: center;
+    justify-content: center;
+    background:black;
+    box-shadow: 0 0 8px rgba(250,250,250,0.6);
+    opacity: 80%;
+    margin: 50px;
+    display:none;
+    position: fixed;
+}
+
+.give-feedback-container input{
+    color:white;
+    
+}
+
+.give-feedback-container form h1{
+    color: white;
+    padding:10px 0;
+    font-family:poppins-black;
+}
+
+.give-feedback-container form{
+    width:100% ;
+    text-align: center;
+    padding:25px 20px;
+}
+
+.give-feedback-container form input{
+    width: 260px;
+    height: 50px;
+    margin:4px 0;
+    border-radius:3px;
+    border:1px solid #5c5c5c;
+    background:#181717;
+    padding:0.15px;
+    padding-right:45px;
+    font-size: 20px;
+    
+}
+
+/* input#nameBox:focus:valid,
+input#mailBox:focus:valid,
+input#opinionBox:focus:valid{
+    border:1px solid #fd4;
+} */
+
+.give-feedback-container form button{
+    margin-top:5px;
+    border:none;
+    background:#fe7;
+    color:#222;
+    padding:10px 0;
+    width:100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+.give-feedback-container form input:focus{
+    border-color: #fe7;
+    color: white;
+    transition:all 0.3s ease;
+}
+
+.give-feedback-container form input:checked{
+    color:#fe7;
+}
+
+.give-feedback-container form input.highlight+label{
+    color:#fe7;
+    text-shadow:0 0 20px #952;
+    opacity:100%;
+}
+
+/* css for rating star */
+.star-widget{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+}
+
+.star-widget input{
+    display:none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color:#444;
+    padding:10px;
+    float:right;
+    transition: all 0.2s ease;
+    opacity:50%;
+}
+
+.star-widget:hover label{
+    color:#fd4;
+    opacity:100%;
+}
+
+
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color:#444;
+    opacity:100%;
+}
+
+.star-widget input:checked ~ label:hover ~ label{
+    color:#444;
+    opacity:100%;
+}

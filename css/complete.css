@@ -1,0 +1,135 @@
+@font-face{
+    font-family:poppins-medium;
+    src:url(../../Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins-medium;
+}
+
+body{
+    background-color: #161623;
+    color: #fff;
+}
+/* Design for Order Confirmed */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 10%;
+  }
+  
+.confirm {
+    text-align: center;
+    font-size: 50px;
+}
+
+.thank {
+  font-size: 25px;
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* Design for back to homepage button */
+.button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover,
+a:active {
+    background-color: green;
+    color: white;
+}
+
+
+
+/* Design for Loading Icon */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+
+  
+
+  

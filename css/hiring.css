@@ -1,0 +1,77 @@
+@font-face{
+    font-family:poppins-semibold;
+    src:url(../Poppins/Poppins-SemiBold.ttf)format('truetype');
+}
+
+html{
+    width:1024px;
+    height:768px;
+    margin:auto;
+    padding: 0;
+    border:0px;
+}
+
+body{
+    background-color:#161626;
+}
+
+/* Design for title */
+body h1{
+    animation-name: move;
+    animation-duration: 3s;
+    text-align: center;
+    color:#fff;
+    font-size:80px;
+    text-decoration:underline overline dotted;
+    font-family:poppins-semibold;
+}
+
+/* Design for title to slide in */
+@keyframes move {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Design for paragraph */
+body .paragraph{
+    color:#fff;
+    font-size:250%;
+    width:70%;
+    margin-left:18%;
+    margin-top:5%;
+    line-height:22px;
+    font-family:monospace;
+    /* background-color:rgba(0,0,0,0.1);
+    border-radius:10px;
+    padding:10px; */
+}
+
+/* Design for button that link to others page */
+body .jobbtn{
+    margin-left:47%;
+    margin-top:3%;
+    border:none;
+    outline:none;
+    background:-webkit-linear-gradient(left,#696EFE,#F8ACFF);
+    /* -webkit-linear-gradient(left,#9BAFD9,#103783); */
+    border-radius:50px;
+    padding:1% 1.5%;
+    cursor:pointer;
+}
+
+body .jobbtn a{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+}
+
+body .jobbtn a:hover{
+    font-size:25px;
+    transition:.3s;
+}

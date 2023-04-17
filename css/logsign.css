@@ -1,0 +1,209 @@
+@font-face {
+    font-family:poppins-black;
+    src: url(../Poppins/Poppins-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:poppins-blackitalic;
+    src:url(../Poppins/Poppins-BlackItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:poppins-bold;
+    src: url(../Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:poppins-bolditalic;
+    src:url(../Poppins/Poppins-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-extrabold;
+    src:url(../Poppins/Poppins-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-extrabolditalic;
+    src:url(../Poppins/Poppins-ExtraBoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-extralight;
+    src:url(../Poppins/Poppins-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-extralightitalic;
+    src:url(../Poppins/Poppins-ExtraLightItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-italic;
+    src:url(../Poppins/Poppins-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-light;
+    src:url(../Poppins/Poppins-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: poppins-lightitalic;
+    src: url(../Poppins/Poppins-LightItalic.ttf) format('truetype');
+}
+@font-face{
+    font-family:poppins-medium;
+    src:url(../Poppins/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-mediumitalic;
+    src: url(../Poppins/Poppins-MediumItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-regular;
+    src: url(../Poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(../Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: poppins-semibolditalic;
+    src: url(../Poppins/Poppins-SemiBoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-thin;
+    src: url(../Poppins/Poppins-Thin.ttf) format('truetype');
+}
+@font-face {
+    font-family:poppins-thinitalic;
+    src: url(../Poppins/Poppins-ThinItalic.ttf) format('truetype');
+}
+
+
+*{
+    font-family: poppins-medium;
+}
+
+/* Design for form container */
+.form-container{
+    top: 30%;
+    left: 50%;
+    width:18%;
+    height:50%;
+    position:fixed;
+    margin:6% auto;
+    border-radius:30px;
+    background-color:rgba(38,38,38,0.8);
+    box-shadow:5px 6px 5px rgba(0,0,0,0.5);
+    padding:5px;
+    overflow:hidden;
+    display:none;
+    translate: -50% -50%;
+    z-index:99;
+}
+
+/* Design for form's title */
+.form-head #login,
+.form-head #register{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline:none;
+    line-height:30px;
+    margin-left:14%;
+    letter-spacing:1.5px;
+    font-size: 175%;
+}
+
+.form-head{
+    border-bottom:1px solid #9055FF;
+}
+
+.form-head .login{
+    color:#13E2DA;
+}
+
+.form-head .register{
+    color:#fff;
+}
+
+.form-head .closeBtn{
+    float:right;
+}
+
+/* Design for each form */
+.login-form,
+.register-form{
+    top:80px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+    margin-left:15%;
+}
+
+.login-form{
+    left:50px;
+}
+
+.register-form{
+    left:450px;
+}
+
+/* Design for form's input field */
+.form-content .field{
+    color:white;
+    margin-left:18px;
+    padding:20px;
+    font-size: 175%;
+}
+
+.form-content input{
+    width:200px;
+    height:100%;
+    display: block;
+    text-align:center;
+    background:transparent;
+    padding:8px;
+    font-size:20px;
+    border-radius:5px;
+    outline: none;
+    border:2px solid #9055FF;
+    color:#fff;
+}
+
+.form-content input:focus{
+    width:220px;
+    border:2px solid #F8ACFF;
+    transition:.5s;
+}
+
+.form-content input::placeholder{
+    color:rgba(255,255,255,0.5);
+}
+
+/* Design for form's button */
+.loginBtn,
+.registerBtn{
+    padding:5px 7px;
+    background: #13E2DA;
+    cursor:pointer;
+    margin-left:43%;
+    margin-top:5%;
+    color:black;
+    border:2px solid #9055FF;
+    border-radius: 5px;
+}
+
+.loginBtn:hover,
+.registerBtn:hover{
+    background:-webkit-linear-gradient(left, #13E2DA,#9055FF);
+    border:2px solid rgba(0, 0, 0, 0.7);
+    transition:.6s;
+    letter-spacing: 1.5px;
+	transition: 0.3s linear;
+}
+
+.form-content form #closebtn{
+    position:absolute;
+}
+
+::placeholder{
+    color:white;
+}
+
