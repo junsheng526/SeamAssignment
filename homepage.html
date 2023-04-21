@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible="IE=edge>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link href="../navigation bar/feedback popout/feedback.css" rel="stylesheet" />
-    <link href="/src/main.css" rel="stylesheet" />
+
+    <!-- local css and js file -->
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/feedback.css">
+    <link rel="stylesheet" href="/css/logsign.css">
+    <link rel="stylesheet" href="/css/navigation bar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/loginsignin.js"></script>
+    <script type="text/javascript" src="/js/feedback.js"></script>
+
     
-    <link href="../navigation bar/login sign in popout/logsign.css" rel="stylesheet"/>
-    <link href="../navigation bar/navigation bar.css" rel="stylesheet"/>
-    <script type="text/javascript" src="../navigation bar/login sign in popout/loginsignin.js"></script>
-    <script type="text/javascript" src="../navigation bar/feedback popout/feedback.js"></script>
-    <link href="../footer/footer.css" rel="stylesheet"/>
-    <!-- <script type="text/javascript" src="../general/command.js"></script> -->
-    <link href="../general/general.css" rel="stylesheet"/>
+    <!-- bootstrap js url -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    
+    <!-- font awesome icon with personal id (need register) -->
+    <!-- <script src="https://kit.fontawesome.com/dbd99f58c7.js" crossorigin="anonymous"></script> -->
+    
+    <!-- bootstrap saas file -->
+    <!-- <link rel="stylesheet" href="/src/main.css"> -->
+    
+    <title>MoonStreet Restaurant</title>
    
 
 </head>
@@ -24,7 +37,7 @@
     <div class="header">
         <div class="home">
            <h1 style="margin-left:20%; width:100%;">Welcome To MoonStreet Restaurant</h1>
-           <img src="../home/homepage photo/logo.png" width="100px" height="100px" alt="" style="margin-left:63%;">
+           <img src="/image/logo.png" width="100px" height="100px" alt="" style="margin-left:63%;">
         </div>
     </div>
            <!-- welcome message background video -->
@@ -35,16 +48,16 @@
                         <input type="radio" name="radio-btn" id="radio3">
                         <input type="radio" name="radio-btn" id="radio4">
                         <div class="slide first">
-                        <video src="intro restaurant.mp4" alt="restaurant" loop autoplay muted>		
+                        <video src="/video/intro restaurant.mp4" alt="restaurant" loop autoplay muted>		
                         </div>
                         <div class="slide">
-                        <video src="Food Film .mp4" alt="western food making" loop autoplay muted></video>
+                        <video src="/video/Food Film .mp4" alt="western food making" loop autoplay muted></video>
                         </div>
                         <div class="slide">
-                        <video src="Restaurant.mp4" alt="western food making" loop autoplay muted></video>
+                        <video src="/video/Restaurant.mp4" alt="western food making" loop autoplay muted></video>
                         </div>
                         <div class="slide">
-                        <video src="Food Reel.mp4" alt="western food making" loop autoplay muted></video>
+                        <video src="/video/Food Reel.mp4" alt="western food making" loop autoplay muted></video>
                         </div>
                         <div class="navigation-auto">
                             <div class="auto-btn1"></div>
@@ -64,15 +77,15 @@
    <header>        
     <nav>
         <ul> 
-            <img src ="../navigation bar/logo.png" alt="moonstreet restaurant" />
-            <li><a href="../home/homepage.html">HOME</a></li>
-            <li><a href="../menu/html/menu.html">MENU</a></li>
-            <li><a href="../event/event.html">EVENT</a></li>
-            <li><a href="../Booking/booking.html">RESERVATION</a></li>
-            <li><a href="../about us/about.html">ABOUT US</a></li>
-            <li><a href="/JoinUs/hiring.html">JOIN US</a></li>
-            <li><a href="../customer feedback web page/customer feedback.html">CUSTOMER REVIEWS</a></li>
-            <li><a href="../FAQ WEB PAGE/faq.html">FAQ</a></li>
+            <img src ="/image/logo.png" alt="moonstreet restaurant" />
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="/html/menu.html">MENU</a></li>
+            <li><a href="/html/event.html">EVENT</a></li>
+            <li><a href="/html/booking.html">RESERVATION</a></li>
+            <li><a href="/html/about.html">ABOUT US</a></li>
+            <li><a href="/html/hiring.html">JOIN US</a></li>
+            <li><a href="/html/customer feedback.html">CUSTOMER REVIEWS</a></li>
+            <li><a href="/html/faq.html">FAQ</a></li>
             <li><div class="login" onclick="openForm()" id="openbtn">&#128100;</div></li>
             <li><div class="customer_review" onclick="feedback()">&#128172;</div></li>
         </ul>
@@ -159,10 +172,10 @@
                             <span>Our Special Dish</span>
                             <h3>Chicken Chop</h3>
                             <p>Our chicken chop is the cut derived from whole leg.<br/>The bone is separated from the whole leg leaving the meat with the knuckle on.<br/>The chicken chop consisting of thigh, drumstick meat and knuckle attached at the end of the drumstick meat.</p>
-                            <a href="../menu/html/view_more.html" class="btn">Order now</a>
+                            <a href="/html/view_more.html" class="btn">Order now</a>
                         </div>
                         <div class="image1">
-                            <img src="../home/homepage photo/dishes 1.png" alt="" >
+                            <img src="/image/dishes 1.png" alt="" >
                         </div>
                     </div>
                     <div class="slide1">
@@ -170,10 +183,10 @@
                             <span>Our Special Dish</span>
                             <h3>Pasta</h3>
                             <p>Our pasta,a cooked egg-and-flour paste prominent in European and Asian cuisine, generally distinguished from pasta by its elongated ribbonlike form.<br/>Our Pasta are commonly used to add body and flavour to broth soups. They are commonly boiled or sautéed and served with sauces and meats or baked in casseroles.</p>
-                            <a href="../menu/html/view_more.html" class="btn">Order now</a>
+                            <a href="/html/view_more.html" class="btn">Order now</a>
                         </div>
                         <div class="image1">
-                            <img src="../home/homepage photo/dishes 2.jpg" alt="" >
+                            <img src="/image/dishes 2.jpg" alt="" >
                         </div>
                     </div>
                     <div class="slide1">
@@ -181,16 +194,16 @@
                             <span>Our Special Dish</span>
                             <h3>Pizza</h3>
                             <p>Our Pizza, a dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature and served hot.</p>
-                            <a href="../menu/html/view_more.html" class="btn">Order now</a>
+                            <a href="/html/view_more.html" class="btn">Order now</a>
                         </div>
                         <div class="image1">
-                            <img src="../home/homepage photo/dishes 3.png" alt="dishe1">
+                            <img src="image/dishes 3.png" alt="dishe1">
                         </div>
                     </div>
                 </div>
 
                 <audio autoplay loop>
-                    <source src="song.mp3" type="audio/mpeg">
+                    <source src="/video/song.mp3" type="audio/mpeg">
                 </audio>
                    <!-- button for go to top of web page -->
                     <div class="top">
@@ -199,7 +212,7 @@
                     
                         
                     <div class="live-chat">
-                        <input type="image" id="live-chat" src="../JoinUs/livechat.png" style="width:3%;"/>
+                        <input type="image" id="live-chat" src="/image/livechat.png" style="width:3%;"/>
                     </div>
                     <div id="chatBot">
                         <iframe  style="display:none;bottom:10px;left:37%;position:fixed;" id="chatBox" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/c2abacae-163c-47b3-ab0b-a205b2f6a457"></iframe>
@@ -212,7 +225,7 @@
         <!-- html for footer -->
         <footer>
             <div class="description">
-            <img src="../navigation bar/logo.png" alt="moonstreet restaurant logo"/>
+            <img src="/image/logo.png" alt="moonstreet restaurant logo"/>
             <h2>MOONSTREET RESTAURANT<br></h2>
             <h3>GOOD MEALS &nbsp;<span style="color:white;">|</span> &nbsp;PERFECT SERVICES</h3>
             <h3>COMFORTABLE ENVIRONMENT &nbsp;<span style="color:white;">|</span> &nbsp; EXCELLENT CHEF </h3>
@@ -235,13 +248,13 @@
                 </div>
                 <div class="col-4">
                 <h3>SOCIAL MEDIA<br></h3>
-                <div class="icon"><img src="../footer/pic/fb.png" style="width:35px;height:35px;" alt="facebook">Moonstreet Restaurant<br></div>
-                <div class="icon"><img src="../footer/pic/ins.png" style="width:35px;height:35px;"alt="instagram">Moonstreet Restaurant<br></div>
-                <div class="icon"><img src="../footer/pic/whatsapp.png" style="width:35px;height:35px;" alt="whatsapp">012-345-6789</div>
+                <div class="icon"><img src="/image/fb.png" style="width:35px;height:35px;" alt="facebook">Moonstreet Restaurant<br></div>
+                <div class="icon"><img src="/image/ins.png" style="width:35px;height:35px;"alt="instagram">Moonstreet Restaurant<br></div>
+                <div class="icon"><img src="/image/whatsapp.png" style="width:35px;height:35px;" alt="whatsapp">012-345-6789</div>
                 </div>
             </div>
          </footer>
     
 </body>
-<script src="../general/general.js"></script>
+<script src="/js/general.js"></script>
 </html>
