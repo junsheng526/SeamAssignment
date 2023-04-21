@@ -4,7 +4,7 @@
 }
 
 .carousel-caption {
-    bottom: 220px;
+    margin-bottom: 27.5vh;
 }
 
 .carousel-caption h5{
@@ -22,10 +22,7 @@
 }
 
 .carousel-caption a {
-    text-transform: uppercase;
-    text-decoration: none;
-    background: darkorange;
-    display: inline-block;
-    color: #000;
-    margin-top: 15px;
+    border-width: 2px;
 }
+
+
