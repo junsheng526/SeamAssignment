@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- local css and js file -->
-    <!-- <link rel="stylesheet" href="/css/index.css" /> -->
+    <link rel="stylesheet" href="/css/menu.css" />
     <script src="/js/index.js"></script>
 
     <!-- bootstrap js url -->
@@ -24,83 +24,908 @@
     <!-- bootstrap saas file -->
     <link rel="stylesheet" href="/src/main.css" />
     <title>MoonStreet : Menu</title>
-</head>
-<body class="bg-primary">
+  </head>
+  <body class="bg-secondary">
+    <div class="floating-parent">
+      <div class="right-button">
+        <i class="fa-light fa-up-to-line" style="color: white"></i>
+      </div>
+    </div>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid justify-content-center">
-          <img
+      <div class="container-fluid justify-content-center">
+        <a href="../index.html"
+          ><img
             src="/image/logo.png"
             href="../index.html"
             alt="logo"
             style="height: 100px; width: 100px"
-          />
-          <button
-            class="navbar-toggler ms-5"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse flex-grow-0"
-            id="collapsibleNavbar"
-          >
-            <ul class="navbar-nav text-center list-unstyled">
-              <li class="nav-item px-4">
-                <a class="nav-link text-white" href="/html/menu.html">Menu</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link text-white" href="/html/service.html">Event</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link text-white" href="/html/news.html"
-                  >Reservation</a
-                >
-              </li>
-              <li class="nav-item px-4 dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDarkDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-dark"
-                  aria-labelledby="navbarDarkDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                  <li><a class="dropdown-item" href="#">About Us</a></li>
-                  <li><a class="dropdown-item" href="#">Join Us</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">FAQ</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-3 bg-warning">
-                <img src="/image/Beef Tenderloin Steaks with Herb Pan Sauce.png" alt="" style="height: 150px;">
-            </div>
-            <div class="col-5 text-white bg-warning">
-                <h5>Beef Tenderloin Steaks</h5>
-                <p>Topped with Herb Pan sauce and served with vegetables.</p>
-                <p>RM35.00</p>
-                <div class="btn btn-outline-light">Add to Cart</div>
-            </div>
+        /></a>
+        <button
+          class="navbar-toggler ms-5"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav text-center list-unstyled">
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/service.html"
+                >Event</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/news.html"
+                >Reservation</a
+              >
+            </li>
+            <li class="nav-item px-4 dropdown">
+              <a
+                class="nav-link dropdown-toggle text-primary"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Join Us</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    
-</body>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row text-primary">
+        <div class="col text-center">
+          <h5 class="fw-bold fs-1">Our Food Menu</h5>
+        </div>
+      </div>
+      <div class="row text-primary justify-content-center">
+        <div class="col-6 text-center">
+          <p class="fw-light">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-9">
+          <a class="btn btn-outline-dark me-2" href="##p1">Maincourse</a>
+          <a class="btn btn-outline-dark m-2" href="##p2">Burger</a>
+          <a class="btn btn-outline-dark m-2" href="##p3">Pasta</a>
+          <a class="btn btn-outline-dark m-2" href="##p4">Pizza</a>
+          <a class="btn btn-outline-dark m-2" href="##p5">Soup</a>
+          <a class="btn btn-outline-dark m-2" href="##p6">Drinks</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="#p1">
+      <div class="row text-primary justify-content-center mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Maincourse</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Beef Tenderloin Steaks with Herb Pan Sauce.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beef Tenderloin Steaks</h5>
+              <p class="card-text">
+                Topped with Herb Pan sauce and served with vegetables.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM35.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Grilled Balsamic Rosemary Chicken.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grilled Balsamic Rosemary Chicken</h5>
+              <p class="card-text">
+                Chicken soaks in a robust marinade of garlic, brown sugar,
+                balsamic vinegar and rosemary before heading off to the grill.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM20.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Lamb Shank with Red Wine.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lamb Shank</h5>
+              <p class="card-text">
+                Meltingly tender lamb shanks in a rich red wine sauce.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM32.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-5 justify-content-center mt-4 mb-4">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Lemon Garlic Parmesan Baked Chicken Wings.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Lemon Garlic Parmesan Baked Chicken Wings
+              </h5>
+              <p class="card-text">
+                Tender, juicy chicken wings with crispy edges loaded with a
+                buttery parmesan garlic sauce.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM18.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Monterey Chicken.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Monterey Chicken</h5>
+              <p class="card-text">
+                Made with boneless skinless chicken breast, salt and pepper,
+                barbecue sauce, bacon, cheddar cheese, tomatoes, green onions.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM18.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Tea-smoked barbecued Lamb Chop  with Spicy Korean Miso.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tea-smoked barbecued Lamb Chop</h5>
+              <p class="card-text">
+                Made with a Korean barbecue twist, adding a spicy miso sauce,
+                matcha tea smoke and smoky miso aubergine.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM33.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="#p2">
+      <div class="row text-primary justify-content-center mt-4 mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Burger</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/beefburger.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Beef Burger</h5>
+              <p class="card-text">
+                Made with a mix of ground beef and ground pork, caramelized
+                onions, balsamic vinegar, chili powder, served with french fries
+                and vegetables.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM16.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Grilled Balsamic Rosemary Chicken.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cheesy Chicken Burger</h5>
+              <p class="card-text">
+                Smashed Chicken Burger with cheeddar and parsley recipe, served
+                with french fries and vegetables.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM16.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Crispy Fillet Burger.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Crispy Fillet Burger</h5>
+              <p class="card-text">
+                Fried Fillet with mayonese sauce, served with french fries and
+                vegetables.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM18.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="#p3">
+      <div class="row text-primary justify-content-center mt-4 mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Pasta</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Bolognese Pasta.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Bolognese Pasta</h5>
+              <p class="card-text">
+                Rich Bolognese Sauce is perfect to serve over pasta. Bolognese
+                Sauce is a meat based Italian sauce made with vegetables, wine,
+                milk, beef and pork.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM15.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Creamy Cajun Shrimp Pasta.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creamy Cajun Shrimp Pasta</h5>
+              <p class="card-text">
+                Cajun Shrimp Pasta with a spicy and rich cream sauce.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM13.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Fettuccine Alfredo with Shrimp.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fettuccine Alfredo with Shrimp Pasta</h5>
+              <p class="card-text">
+                mixing up fettuccine noodles in a Alfredo sauce tossed with
+                shrimp. Served with garlic bread.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM32.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-5 justify-content-center mt-5">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Penne Arrabbiata.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Penne Arrabbiata Pasta</h5>
+              <p class="card-text">
+                Tossed with red wine, marinara, lots of garlic, and tender
+                pieces of chicken.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM16.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Spaghetti Aglio Olio.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti Aglio Olio</h5>
+              <p class="card-text">
+                A traditional Italian pasta dish with sliced garlic that is
+                sautéed in olive oil, then tossed with spaghetti, red pepper
+                flakes and parmesan cheese.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM13.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Spaghetti Carbonara.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti Carbonara</h5>
+              <p class="card-text">
+                Silky spaghetti with crispy pancetta in a super creamy and
+                cheesy sauce.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM13.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="#p4">
+      <div class="row text-primary justify-content-center mt-4 mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Pizza</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Cheesy BBQ Chicken.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cheesy BBQ Chicken Pizza</h5>
+              <p class="card-text">
+                Slathered with BBQ sauce and sprinkled with tons of mozzarella
+                and gouda.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM17.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Hawaiian Chicken.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hawaiian Chicken Pizza</h5>
+              <p class="card-text">
+                Layered with smokey bbq sauce, chicken pieces, creamy
+                mozzarella, sweet pineapple, and flavorful red onion and
+                cilantro.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM17.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Spicy Sausage and Pepperoni.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spicy Sausage and Pepperoni Pizza</h5>
+              <p class="card-text">
+                Spicy sausage and pepperoni pizza with pizza dough, Marinara
+                sauce, Mozzarella cheese, spicy Italian sausage, pepperoni
+                slices.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM32.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="#p5">
+      <div class="row text-primary justify-content-center mt-4 mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Soup</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="/image/Chunky Potato Soup.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chunky Potato Soup</h5>
+              <p class="card-text">
+                Loaded with chunky potatoes, bacon, corn, and two kinds of
+                cheese for a creamy, filling soup.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM8.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Green Pea Soup.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Green Pea Soup</h5>
+              <p class="card-text">Vegetarian and dairy-free.</p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM6.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Mushroom Soup.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Mushroom Soup</h5>
+              <p class="card-text">
+                Made with a full pound of fresh mushrooms.
+              </p>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM7.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-4" id="#p6">
+      <div class="row text-primary justify-content-center mt-4 mb-4">
+        <div class="col-9">
+          <h1 class="fw-bold fs-1">Drinks</h1>
+        </div>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Mineral Water.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Drinking Water</h5>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM1.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Lemonade.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Lemonade</h5>
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM4.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="/image/Ribena Lemon.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Ribena Lemon</h5>
+
+              <div class="row align-items-center">
+                <div class="col">
+                  <p class="card-text fw-bold">RM3.00</p>
+                </div>
+                <div class="col">
+                  <div class="btn btn-outline-dark">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+          <div class="col-10 col-md-5 col-lg-3">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="/image/Watermelon Lemonade .png"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Waterlemon Lemonade</h5>
+
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p class="card-text fw-bold">RM6.00</p>
+                  </div>
+                  <div class="col">
+                    <div class="btn btn-outline-dark">Add to Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-md-5 col-lg-3">
+            <div class="card h-100">
+              <img class="card-img-top" src="/image/orangejuice.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Orange Juice</h5>
+
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p class="card-text fw-bold">RM5.00</p>
+                  </div>
+                  <div class="col">
+                    <div class="btn btn-outline-dark">Add to Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-md-5 col-lg-3">
+            <div class="card h-100">
+              <img
+                class="card-img-top"
+                src="/image/Tropical Smoothie.png"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tropical Smoothie</h5>
+
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p class="card-text fw-bold">RM8.00</p>
+                  </div>
+                  <div class="col">
+                    <div class="btn btn-outline-dark">Add to Cart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="py-6 border-top">
+        <div class="container">
+          <div class="row justify-content-evenly mt-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="row">
+                <div class="col-4">
+                  <a href="../index.html"
+                    ><img
+                      src="/image/logo.png"
+                      href="../index.html"
+                      alt="logo"
+                      style="height: 100px; width: 100px"
+                  /></a>
+                </div>
+                <div class="col-8">
+                  <div class="fw-bold text-uppercase fs-4">MoonStreet</div>
+                  <p>
+                    GOOD MEALS &nbsp;<span style="color: black">|</span>
+                    &nbsp;PERFECT SERVICES
+                    <span style="color: black">|</span> COMFORTABLE ENVIRONMENT
+                    &nbsp;<span style="color: black">|</span> &nbsp; EXCELLENT
+                    CHEF
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.youtube.com/"
+                        class="text-para"
+                        title="YouTube"
+                        ><i class="fab fa-youtube" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://twitter.com/"
+                        class="text-para"
+                        title="Twitter"
+                        ><i class="fab fa-twitter" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.facebook.com/"
+                        class="text-para"
+                        title="Facebook"
+                        ><i class="fab fa-facebook" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.instagram.com/"
+                        class="text-para"
+                        title="Instagram"
+                        ><i class="fab fa-instagram" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <h6 class="text-uppercase text-heading mb-3">Restaurant</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/html/project.html" class="text-para text-uppercase"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/service.html" class="text-para text-uppercase"
+                    >Event</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/news.html" class="text-para text-uppercase"
+                    >Reservation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercase text-heading mb-3">More</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/html/project.html" class="text-para text-uppercase"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/service.html" class="text-para text-uppercase"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/news.html" class="text-para text-uppercase"
+                    >Join Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/aboutUs.html" class="text-para text-uppercase"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/contact.html" class="text-para text-uppercase"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4 border-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col text-md-start">
+              <p class="text-sm text-center mb-md-0">
+                &copy; 2023 Moonstreet Sdn. Bhd. Privacy Policy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
