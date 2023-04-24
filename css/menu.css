@@ -10,25 +10,3 @@
 .card .row {
     margin-top: auto !important;
 }
-
-.text-para {
-    text-decoration: none;
-}
-
-.floating-parent{
-    position: fixed;
-    bottom: 8%;
-    right: 18px;
-    text-align: center;
-    color: black;
-}
-
-.floating-parent .right-button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #000;
-    float: right;
-    cursor: pointer;
-    box-shadow: 0 -2px 3px -1px #000;
-}

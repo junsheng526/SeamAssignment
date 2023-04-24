@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- local css and js file -->
     <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <script src="/js/index.js"></script>
+    <script src="/js/general.js"></script>
 
     <!-- bootstrap js url -->
     <script
@@ -26,11 +28,15 @@
     <title>MoonStreet : Menu</title>
   </head>
   <body class="bg-secondary">
-    <div class="floating-parent">
-      <div class="right-button">
-        <i class="fa-light fa-up-to-line" style="color: white"></i>
-      </div>
+    <!-- floating button -->
+    <div class="fixed-fab" onclick="topFunction()">
+      <img
+        src="/image/top_button.png"
+        alt=""
+        style="height: 24px; width: 24px"
+      />
     </div>
+
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid justify-content-center">
@@ -58,15 +64,16 @@
               <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link text-primary" href="/html/service.html"
-                >Event</a
-              >
-            </li>
-            <li class="nav-item px-4">
               <a class="nav-link text-primary" href="/html/news.html"
                 >Reservation</a
               >
             </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/service.html"
+                >About Us</a
+              >
+            </li>
+
             <li class="nav-item px-4 dropdown">
               <a
                 class="nav-link dropdown-toggle text-primary"
