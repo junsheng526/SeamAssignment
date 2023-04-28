@@ -7,7 +7,7 @@
     <!-- local css and js file -->
     <link rel="stylesheet" href="/css/login.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <script src="/js/general.js"></script>
+    <!--<script src="/js/general.js"></script>-->
 
     <!-- bootstrap js url -->
     <script
@@ -53,11 +53,18 @@
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Remember me</label>
                     </div>
-                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                    <button onclick="login ()" class="btn btn-outline-dark">Login</button>
                   </form>
             </div>
         </div>
       </div>
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="/js/loginsignin.js"></script>
+
+
 </html>
