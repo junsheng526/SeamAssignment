@@ -32,7 +32,7 @@ function login () {
     .then(function() {
   
       // DOne
-      window.location.assign("index.html");
+      window.location.assign("/index.html");
       alert('User Logged In!!');
     })
     .catch(function(error) {
