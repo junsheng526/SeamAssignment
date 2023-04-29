@@ -7,7 +7,7 @@
         <!-- local css and js file -->
         <link rel="stylesheet" href="/css/contactUs.css" />
         <link rel="stylesheet" href="/css/footer.css" />
-        <script src="/js/general.js"></script>
+        <!--<script src="/js/general.js"></script>-->
     
         <!-- bootstrap js url -->
         <script
@@ -105,24 +105,26 @@
                 <img class="img-fluid" src="/image/moonstreet restaurant.jpg" alt="1.jpg">
             </div>
             <div class="col-10 col-lg-5 col-md-5 containerRight">
+            
                 <label for="name">Name</label>
-                <input type="text" class="name" id="name"/><br/>
+                <input type="text" class="name" id="name" required/><br/>
                 <label for="service">What service are you interested in</label>
-                <select name="service" id="service">
-                    <option value="#" disabled selected>Service</option>
-                    <option value="#">Complaint</option>
-                    <option value="#">Review</option>
-                    <option value="#">Supplier</option>
-                    <option value="#">Others</option>
+                <select name="service" id="service" required>
+                    <option value="Service" disabled selected>Service</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Review">Review</option>
+                    <option value="Supplier">Supplier</option>
+                    <option value="Others">Others</option>
                 </select>
                 <br/>
                 <label for="phone">Phone Number</label>
-                <input type="number" class="phone" id="phone"/><br/>
+                <input type="number" class="phone" id="phone" required/><br/>
                 <label for="email">Email Address</label>
-                <input type="email" class="email" id="email"/><br/>
+                <input type="email" class="email" id="email" required/><br/>
                 <label for="message">Message</label>
-                <input type="text" class="message" id="message"/><br/>
-                <button class="btn btn-outline-dark">Submit</button>
+                <input type="text" class="message" id="message" required/><br/>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+            
             </div>
         </div>
     </div>
@@ -256,4 +258,11 @@
         </div>
       </footer>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="/js/contactUs.js"></script>
+
 </html>
