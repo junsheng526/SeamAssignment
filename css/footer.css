@@ -19,3 +19,15 @@
 .text-para {
     text-decoration: none;
 }
+
+.nav-link:hover{
+    color: #0000FF !important;
+}
+
+.text-lightblue{
+    color: #6EC1E4;
+}
+
+.text-darkblue{
+    color: #0000FF;
+}
