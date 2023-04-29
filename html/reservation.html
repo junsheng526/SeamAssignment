@@ -7,7 +7,7 @@
     <!-- local css and js file -->
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <script src="/js/general.js"></script>
+    <!--<script src="/js/general.js"></script>-->
 
     <!-- bootstrap js url -->
     <script
@@ -132,7 +132,7 @@
               <div class="col">
                 <div class="mb-3">
                   <label for="custName" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="custName" />
+                  <input type="text" class="form-control" id="custName" required/>
                   <!-- <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
                   </div> -->
@@ -166,13 +166,13 @@
               <div class="col">
                 <div class="mb-3">
                   <label for="date" class="form-label">Date</label>
-                  <input type="date" class="form-control" />
+                  <input type="date" class="form-control" id="reserveDate" required/>
                 </div>
               </div>
               <div class="col">
                 <div class="mb-3">
                   <label for="time" class="form-label">Time</label>
-                  <input type="time" class="form-control" />
+                  <input type="time" class="form-control" id="reserveTime" required/>
                 </div>
               </div>
               <div class="col">
@@ -183,6 +183,7 @@
                   <input
                     class="form-control"
                     type="number"
+                    id="pax"
                     min="2"
                     max="10"
                     placeholder="1"
@@ -328,4 +329,10 @@
       </div>
     </footer>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <script src="/js/reservation.js"></script>
+
 </html>
