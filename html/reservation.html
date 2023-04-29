@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- local css and js file -->
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="/css/footer.css" />
@@ -25,292 +25,307 @@
     <!-- bootstrap saas file -->
     <link rel="stylesheet" href="/src/main.css" />
     <title>MoonStreet : Reservation</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid justify-content-lg-center justify-content-md-center justify-content-sm-between">
-          <a href="../index.html"
-            ><img
-              src="/image/logo.png"
-              href="../index.html"
-              alt="logo"
-              style="height: 100px; width: 100px"
-          /></a>
-          <button
-            class="navbar-toggler ms-5"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse flex-grow-0"
-            id="collapsibleNavbar"
-          >
-            <ul class="navbar-nav text-center list-unstyled">
-              <li class="nav-item px-4">
-                <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link text-primary" href="/html/news.html"
-                  >Reservation</a
-                >
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link text-primary" href="/html/aboutUs.html"
-                  >About Us</a
-                >
-              </li>
-  
-              <li class="nav-item px-4 dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-primary"
-                  href="#"
-                  id="navbarDarkDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-dark"
-                  aria-labelledby="navbarDarkDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="/html/contactUs.html">Contact Us</a></li>
-                  <li><a class="dropdown-item" href="/html/aboutUs.html">About Us</a></li>
-                  <li><a class="dropdown-item" href="#">Join Us</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/html/login.html">Login</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">FAQ</a></li>
-                </ul>
-              </li>
-            </ul>
+      <div
+        class="container-fluid justify-content-lg-center justify-content-md-center justify-content-sm-between"
+      >
+        <a href="../index.html"
+          ><img
+            src="/image/logo.png"
+            href="../index.html"
+            alt="logo"
+            style="height: 100px; width: 100px"
+        /></a>
+        <button
+          class="navbar-toggler ms-5"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav text-center list-unstyled">
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/reservation.html"
+                >Reservation</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-primary" href="/html/aboutUs.html"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item px-4 dropdown">
+              <a
+                class="nav-link dropdown-toggle text-primary"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/html/contactUs.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/html/aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Join Us</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="/html/login.html">Login</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-lg pt-5">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-10 col-lg-5 col-md-5">
+          <h1>
+            <div class="display-5 text-uppercase">Reservation</div>
+          </h1>
+          <p class="fs-6 fw-light text-justify">
+            With our extensive expertise offering bespoke carbon neutral
+            technologies & financing solutions in the region,
+            <span class="text-primary fw-bold">MoonStreet</span> stands at the
+            forefront in providing green energy solutions to meet your renewable
+            energy goals. We help every client find the best approach to save
+            money and the planet.
+          </p>
+          <img
+            class="img-fluid"
+            src="/image/moonstreet restaurant.jpg"
+            alt="1.jpg"
+          />
+        </div>
+        <div class="col-10 col-lg-5 col-md-5">
+          <form>
+            <!-- your name  -->
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="custName" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="custName" />
+                  <!-- <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- PhoneNumber -->
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="custPhoneNo" class="form-label"
+                    >Phone Number</label
+                  >
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">+60</span>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="custPhoneNo"
+                      placeholder="123456789"
+                      pattern="1[0-9]{1}[0-9]{7}"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="time" class="form-label">Time</label>
+                  <input type="time" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="numberOfPax" class="form-label"
+                    >Number Of Pax</label
+                  >
+                  <input
+                    class="form-control"
+                    type="number"
+                    min="2"
+                    max="10"
+                    placeholder="1"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div class="py-6 border-top mt-5">
+        <div class="container">
+          <div class="row justify-content-evenly mt-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="row">
+                <div class="col-4">
+                  <a href="../index.html"
+                    ><img
+                      src="/image/logo.png"
+                      href="../index.html"
+                      alt="logo"
+                      style="height: 100px; width: 100px"
+                  /></a>
+                </div>
+                <div class="col-10 col-md-10 col-lg-8">
+                  <div class="fw-bold text-uppercase fs-4">MoonStreet</div>
+                  <p>
+                    GOOD MEALS &nbsp;<span style="color: black">|</span>
+                    &nbsp;PERFECT SERVICES
+                    <span style="color: black">|</span> COMFORTABLE ENVIRONMENT
+                    &nbsp;<span style="color: black">|</span> &nbsp; EXCELLENT
+                    CHEF
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.youtube.com/"
+                        class="text-para"
+                        title="YouTube"
+                        ><i class="fab fa-youtube" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://twitter.com/"
+                        class="text-para"
+                        title="Twitter"
+                        ><i class="fab fa-twitter" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.facebook.com/"
+                        class="text-para"
+                        title="Facebook"
+                        ><i class="fab fa-facebook" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.instagram.com/"
+                        class="text-para"
+                        title="Instagram"
+                        ><i class="fab fa-instagram" style="font-size: 24px"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-2">
+              <h6 class="text-uppercase text-heading mb-3">Restaurant</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/html/project.html" class="text-para text-uppercase"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/service.html" class="text-para text-uppercase"
+                    >Event</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/news.html" class="text-para text-uppercase"
+                    >Reservation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-2">
+              <h6 class="text-uppercase text-heading mb-3">More</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/html/project.html" class="text-para text-uppercase"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/service.html" class="text-para text-uppercase"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/news.html" class="text-para text-uppercase"
+                    >Join Us</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/aboutUs.html" class="text-para text-uppercase"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a href="/html/contact.html" class="text-para text-uppercase"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-
-      <!-- reservation  -->
-
-      <div class="container">
-        <!--Form for user to book a table-->
-        <form name="form" id="form" method="get">
-            <h2>RESERVATION</h2>
-            <div class="custInfo">
-            <!--Label user's full name-->
-            <label for="custname">Full Name<b style="color:red;">*</b></label><br/><br/>
-            <!--For user to input their first name and last name-->
-            <input type="text" name="fname" id="custname" placeholder="Enter Your First Name" required/>
-            <input type="text" name="lname" id="custname" placeholder="Enter Your Last Name" style="margin-left:3px;" required/><br/><br/>
-            <!--Label user's phone number-->
-            <label for="custphone">Phone Number<b style="color:red;">*</b></label><br/><br/>
-            <!--For user to input their phone number-->
-            <input type="tel" name="phone" id="custphone" placeholder="(012) 345-6789" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" required/><br/><br/>
-            </div>
-            <div>
-                <fieldset>
-                    <!--For user to choose the number of pax to eat-->
-                    <legend><label for="paxBox">Number of Pax</label></legend>
-                    <input type="number" name="pax" id="paxBox" min="2" max="10" placeholder="Minimum 2 person / Maximum 10 person" required/>
-                </fieldset>
-            </div>
-            <div>
-                <fieldset>
-                    <!--For user to choose the date to eat-->
-                    <legend><label for="dateBox">Select Date</label></legend>
-                    <input type="date" name="bookDate" id="dateBox" required/>
-                </fieldset>
-            </div>
-            <div>
-                <fieldset>
-                    <!--For user to choose the timeslot to eat-->
-                    <legend><label for="timeBox">Time Slot</label></legend>
-                    <select id="timeBox" name="bookTime" required>
-                        <option selected disable></option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="11:30">11:30 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="12:30">12:30 PM</option>
-                        <option value="13:00">1:00 PM</option>
-                        <option value="13:30">1:30 PM</option>
-                        <option value="14:00">2:00 PM</option>
-                        <option value="14:30">2:30 PM</option>
-                        <option value="15:00">3:00 PM</option>
-                        <option value="15:30">3:30 PM</option>
-                        <option value="16:00">4:00 PM</option>
-                        <option value="16:30">4:30 PM</option>
-                        <option value="17:00">5:00 PM</option>
-                        <option value="17:30">5:30 PM</option>
-                        <option value="18:00">6:00 PM</option>
-                        <option value="18:30">6:30 PM</option>
-                        <option value="19:00">7:00 PM</option>
-                        <option value="19:30">7:30 PM</option>
-                        <option value="20:00">8:00 PM</option>
-                        <option value="20:30">8:30 PM</option>
-                        <option value="21:00">9:00 PM</option>
-                        <option value="21:30">9:30 PM</option>
-                        <option value="22:00">10:00 PM</option>
-                        <option value="22:30">10:30 PM</option>
-                    </select>
-                </fieldset>
-            </div>
-            <!--Button for user to confirm booking-->
-            <div class="confirmReserve">
-            <input type="submit" id="confirmBook" value="Confirm" onclick="confirm()"/>
-            </div>
-            <!--Button for user to cancel booking and it will reset the information that user key in-->
-            <div class="cancelReserve">
-            <input type="reset" id="cancelBook" value="Cancel"/>
-            </div>
-            <!--Restaurant's information-->
-            <div class="restInfo">
-                <h3 style="letter-spacing:1px;">MoonStreet Restaurant</h3>
-                <div class="restAddress">
-                    <h5>PV 128, Taman Danau Kota, 53100, Kuala Lumpur</h5>
-                </div>
-                <div class="restTime">
-                    <h5>11:00-23:00</h5>
-                </div>
-                <div class="restNum">
-                    <h5>012 345-6789</h5>
-                </div>
-            </div>
-        </form>
       </div>
 
-      <!-- footer  -->
-      <footer>
-        <div class="py-6 border-top">
-          <div class="container">
-            <div class="row justify-content-evenly mt-5">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="row">
-                  <div class="col-4">
-                    <a href="../index.html"
-                      ><img
-                        src="/image/logo.png"
-                        href="../index.html"
-                        alt="logo"
-                        style="height: 100px; width: 100px"
-                    /></a>
-                  </div>
-                  <div class="col-10 col-md-10 col-lg-8">
-                    <div class="fw-bold text-uppercase fs-4">MoonStreet</div>
-                    <p>
-                      GOOD MEALS &nbsp;<span style="color: black">|</span>
-                      &nbsp;PERFECT SERVICES
-                      <span style="color: black">|</span> COMFORTABLE ENVIRONMENT
-                      &nbsp;<span style="color: black">|</span> &nbsp; EXCELLENT
-                      CHEF
-                    </p>
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a
-                          href="https://www.youtube.com/"
-                          class="text-para"
-                          title="YouTube"
-                          ><i class="fab fa-youtube" style="font-size: 24px"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="https://twitter.com/"
-                          class="text-para"
-                          title="Twitter"
-                          ><i class="fab fa-twitter" style="font-size: 24px"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/"
-                          class="text-para"
-                          title="Facebook"
-                          ><i class="fab fa-facebook" style="font-size: 24px"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/"
-                          class="text-para"
-                          title="Instagram"
-                          ><i class="fab fa-instagram" style="font-size: 24px"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-12 col-md-12 col-lg-2">
-                <h6 class="text-uppercase text-heading mb-3">Restaurant</h6>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="/html/project.html" class="text-para text-uppercase"
-                      >Menu</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/service.html" class="text-para text-uppercase"
-                      >Event</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/news.html" class="text-para text-uppercase"
-                      >Reservation</a
-                    >
-                  </li>
-                </ul>
-              </div>
-  
-              <div class="col-12 col-md-12 col-lg-2">
-                <h6 class="text-uppercase text-heading mb-3">More</h6>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="/html/project.html" class="text-para text-uppercase"
-                      >Contact Us</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/service.html" class="text-para text-uppercase"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/news.html" class="text-para text-uppercase"
-                      >Join Us</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/aboutUs.html" class="text-para text-uppercase"
-                      >Login</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/html/contact.html" class="text-para text-uppercase"
-                      >FAQ</a
-                    >
-                  </li>
-                </ul>
-              </div>
+      <div class="py-4 border-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col text-md-start">
+              <p class="text-sm text-center mb-md-0">
+                &copy; 2023 Moonstreet Sdn. Bhd. Privacy Policy
+              </p>
             </div>
           </div>
         </div>
-  
-        <div class="py-4 border-top">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col text-md-start">
-                <p class="text-sm text-center mb-md-0">
-                  &copy; 2023 Moonstreet Sdn. Bhd. Privacy Policy
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
