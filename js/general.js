@@ -17,7 +17,7 @@ window.onscroll = function(){scrollFunction()};
 // Function for live chat box
 const livechatBtn = document.getElementById("live-chat");
 const chatBox = document.querySelector("iframe");
-livechatBtn.addEventListener("click",openChatBox);
+// livechatBtn.addEventListener("click",openChatBox);
 function openChatBox(){
     if(chatBox.style.display === "block"){
         chatBox.style.display = "none";

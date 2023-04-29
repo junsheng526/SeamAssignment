@@ -10,3 +10,7 @@
 .card .row {
     margin-top: auto !important;
 }
+
+input[type="radio"]{
+    display:none;
+}

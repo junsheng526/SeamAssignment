@@ -38,7 +38,9 @@
 
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-fluid justify-content-lg-center justify-content-md-center justify-content-sm-between">
+      <div
+        class="container-fluid justify-content-lg-center justify-content-md-center justify-content-sm-between"
+      >
         <a href="../index.html"
           ><img
             src="/image/logo.png"
@@ -88,19 +90,70 @@
                 class="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="/html/contactUs.html">Contact Us</a></li>
-                <li><a class="dropdown-item" href="/html/aboutUs.html">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="/html/contactUs.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/html/aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Join Us</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="/html/login.html">Login</a></li>
+                <li>
+                  <a class="dropdown-item" href="/html/login.html">Login</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">FAQ</a></li>
               </ul>
             </li>
           </ul>
         </div>
+
+        <button
+          type="button"
+          class="btn btn-labeled"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <span class="btn-label"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></span>
+        </button>
       </div>
     </nav>
+
+    <!-- offcanvas start-->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Order Details</h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="items" id="items"></ul>
+        <h3 id="total" style="text-align: right">Total: RM 0</h3>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary text-para">Check Out</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas end  -->
 
     <div class="container mt-5">
       <div class="row text-primary">
@@ -147,7 +200,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Beef Tenderloin Steaks</h5>
+              <div id="food1">
+                <h5 class="card-title">Beef Tenderloin Steaks</h5>
+              </div>
               <p class="card-text">
                 Topped with Herb Pan sauce and served with vegetables.
               </p>
@@ -156,7 +211,23 @@
                   <p class="card-text fw-bold">RM35.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type1"
+                    id="type1"
+                    value="35.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div
+                    class="btn btn-outline-dark"
+                    onclick="choose(1)"
+                    name="type1"
+                    id="type1"
+                    value="35.00"
+                  >
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -933,5 +1004,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/cart.js"></script>
   </body>
 </html>
