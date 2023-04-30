@@ -17,23 +17,45 @@ const auth = firebase.auth();
 const emailField = document.getElementById('exampleInputEmail3');
 const passwordField = document.getElementById('exampleInputPassword3');
 
-function register () {
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+
+
+function register() {
     const email = emailField.value;
     const password = passwordField.value;
-    
+
     // Check that email and password fields are not empty
-    if (!email || !password) {
-        alert('Please enter your email and password.');
-        return;
-    }
-    
-    // Check that email is in a valid format using a regular expression
+    // if (!email || !password) {
+    //     alert('Please enter your email and password.');
+    //     return;
+    // }
+
+    // // Check that email is in a valid format using a regular expression
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         alert('Please enter a valid email address.');
         return;
     }
-    
+
     // Create a new user account using Firebase Authentication
     auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {

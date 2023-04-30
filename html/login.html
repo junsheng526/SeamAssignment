@@ -31,36 +31,39 @@
     </video> -->
     <!-- login form  -->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-      <div class="row border rounded-5 p-3 bg-white shadow justify-content-center align-items-center box-area">
+      <div class="row border rounded-5 p-3 bg-white shadow justify-content-center align-items-center mx-2">
         <div class="col-12 col-lg-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
           <img src="/image/log-in.png" alt="" style="height: 100%; width: 100%"/>
         </div>
 
         <div class="col-12 col-lg-6">
-          <h1>Hello, Again</h1>
-          <p>We are happy to have you back to MoonStreet.</p>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-          </div>
-          <div class="mb-3">
-            <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1"/>
-          </div>
-          <div class="row justify-content-between">
-            <div class="col">
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          <h1><span class="text-info">Hello</span>, Again</h1>
+          <p>We are happy to have you back to <span class="text-info">MoonStreet</span>.</p>
+          <form class="row gap-2 mb-2 needs-validation" novalidate>
+            <div class="col-12">
+              <input type="email" class="form-control" placeholder="Email Address" id="email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="col-12">
+              <input type="password" placeholder="Password" class="form-control" id="password" aria-describedby="passwordHelp" required>
+            </div>
+            <div class="col-12">
+              <div class="row justify-content-between">
+                <div class="col">
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                  </div>
+                </div>
+                <div class="col text-end">
+                  <p><a href="/html/forgetPassword.html" class="text-info">Forget Password</a></p>
+                </div>
               </div>
             </div>
-            <div class="col text-end">
-              <p><a href="/html/forgetPassword.html" class="text-info">Forget Password</a></p>
+            <div class="col-12 d-grid gap-2">
+              <button type="submit" onclick="login ()" class="btn btn-info text-white">Login</button>
+              <p>Don't have account?<a href="/html/register.html" class="text-info">Sign Up</a></p>
             </div>
-          </div>
-          <div class="d-grid gap-2">
-            <button onclick="login ()" class="btn btn-info text-white">Login</button>
-            <p>Don't have account?<a href="/html/register.html" class="text-info">Sign Up</a></p>
-          </div>
-
+          </form>
         </div>
       </div>
     </div>
