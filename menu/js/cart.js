@@ -1,8 +1,8 @@
     // Function Add to  cart
     total = 0;
     function choose(n) {
-    const itemList = document.getElementById('items');
-    const bill = document.getElementById('total');
+        const itemList = document.getElementById('items');
+        const bill = document.getElementById('total');
       
         alert("Successfully added to cart!😊");
           
@@ -15,7 +15,7 @@
         price = pr[0].value;
         type = 'RM ' + price;
 
-        itemList.innerHTML += food + type + '<button class="remove-item" style="border-radius:100%; padding:0% 2% 0% 2%; margin-left:5%;" onclick="removeItem()">x</button>';
+        itemList.innerHTML += food + type + '<button class="remove-item" style="border-radius:100%; padding:0% 2% 0% 2%; margin-left:5%;" onclick="removeItem()"><i class="fa-regular fa-xmark"></i></button>';
         total += Number(price);
         bill.innerHTML = 'Total: RM ' + total;
     }
