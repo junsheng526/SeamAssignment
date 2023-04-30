@@ -219,13 +219,7 @@
                     checked
                   />
                   <span class="checkmark"></span>
-                  <div
-                    class="btn btn-outline-dark"
-                    onclick="choose(1)"
-                    name="type1"
-                    id="type1"
-                    value="35.00"
-                  >
+                  <div class="btn btn-outline-dark" onclick="choose(1)">
                     Order
                   </div>
                 </div>
@@ -241,7 +235,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Grilled Balsamic Rosemary Chicken</h5>
+              <div id="food2">
+                <h5 class="card-title">Grilled Balsamic Rosemary Chicken</h5>
+              </div>
               <p class="card-text">
                 Chicken soaks in a robust marinade of garlic, brown sugar,
                 balsamic vinegar and rosemary before heading off to the grill.
@@ -251,7 +247,17 @@
                   <p class="card-text fw-bold">RM20.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type2"
+                    id="type2"
+                    value="20.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(2)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -265,7 +271,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Lamb Shank</h5>
+              <div id="food3">
+                <h5 class="card-title">Lamb Shank</h5>
+              </div>
               <p class="card-text">
                 Meltingly tender lamb shanks in a rich red wine sauce.
               </p>
@@ -274,7 +282,17 @@
                   <p class="card-text fw-bold">RM32.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type3"
+                    id="type3"
+                    value="32.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(3)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -293,9 +311,12 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">
-                Lemon Garlic Parmesan Baked Chicken Wings
-              </h5>
+              <div id="food4">
+                <h5 class="card-title">
+                  Lemon Garlic Parmesan Baked Chicken Wings
+                </h5>
+              </div>
+
               <p class="card-text">
                 Tender, juicy chicken wings with crispy edges loaded with a
                 buttery parmesan garlic sauce.
@@ -305,7 +326,17 @@
                   <p class="card-text fw-bold">RM18.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type4"
+                    id="type4"
+                    value="18.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(4)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -319,7 +350,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Monterey Chicken</h5>
+              <div id="food5">
+                <h5 class="card-title">Monterey Chicken</h5>
+              </div>
               <p class="card-text">
                 Made with boneless skinless chicken breast, salt and pepper,
                 barbecue sauce, bacon, cheddar cheese, tomatoes, green onions.
@@ -329,7 +362,17 @@
                   <p class="card-text fw-bold">RM18.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type5"
+                    id="type5"
+                    value="18.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(5)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -344,7 +387,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Tea-smoked barbecued Lamb Chop</h5>
+              <div id="food6">
+                <h5 class="card-title">Tea-smoked barbecued Lamb Chop</h5>
+              </div>
               <p class="card-text">
                 Made with a Korean barbecue twist, adding a spicy miso sauce,
                 matcha tea smoke and smoky miso aubergine.
@@ -354,7 +399,17 @@
                   <p class="card-text fw-bold">RM33.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type6"
+                    id="type6"
+                    value="33.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(6)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -374,7 +429,9 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/beefburger.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Beef Burger</h5>
+              <div id="food7">
+                <h5 class="card-title">Beef Burger</h5>
+              </div>
               <p class="card-text">
                 Made with a mix of ground beef and ground pork, caramelized
                 onions, balsamic vinegar, chili powder, served with french fries
@@ -385,7 +442,17 @@
                   <p class="card-text fw-bold">RM16.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type7"
+                    id="type7"
+                    value="16.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(7)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -399,7 +466,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Cheesy Chicken Burger</h5>
+              <div id="food8">
+                <h5 class="card-title">Cheesy Chicken Burger</h5>
+              </div>
               <p class="card-text">
                 Smashed Chicken Burger with cheeddar and parsley recipe, served
                 with french fries and vegetables.
@@ -409,7 +478,17 @@
                   <p class="card-text fw-bold">RM16.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type8"
+                    id="type8"
+                    value="16.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(8)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -423,7 +502,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Crispy Fillet Burger</h5>
+              <div id="food9">
+                <h5 class="card-title">Crispy Fillet Burger</h5>
+              </div>
               <p class="card-text">
                 Fried Fillet with mayonese sauce, served with french fries and
                 vegetables.
@@ -433,7 +514,17 @@
                   <p class="card-text fw-bold">RM18.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type9"
+                    id="type9"
+                    value="18.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(9)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -453,7 +544,9 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Bolognese Pasta.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Bolognese Pasta</h5>
+              <div id="food10">
+                <h5 class="card-title">Bolognese Pasta</h5>
+              </div>
               <p class="card-text">
                 Rich Bolognese Sauce is perfect to serve over pasta. Bolognese
                 Sauce is a meat based Italian sauce made with vegetables, wine,
@@ -464,7 +557,17 @@
                   <p class="card-text fw-bold">RM15.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type10"
+                    id="type10"
+                    value="15.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(10)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -478,7 +581,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Creamy Cajun Shrimp Pasta</h5>
+              <div id="food11">
+                <h5 class="card-title">Creamy Cajun Shrimp Pasta</h5>
+              </div>
               <p class="card-text">
                 Cajun Shrimp Pasta with a spicy and rich cream sauce.
               </p>
@@ -487,7 +592,17 @@
                   <p class="card-text fw-bold">RM13.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type11"
+                    id="type11"
+                    value="13.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(11)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -501,7 +616,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Fettuccine Alfredo with Shrimp Pasta</h5>
+              <div id="food12">
+                <h5 class="card-title">Fettuccine Alfredo with Shrimp Pasta</h5>
+              </div>
               <p class="card-text">
                 mixing up fettuccine noodles in a Alfredo sauce tossed with
                 shrimp. Served with garlic bread.
@@ -511,7 +628,17 @@
                   <p class="card-text fw-bold">RM32.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type12"
+                    id="type12"
+                    value="32.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(12)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -530,7 +657,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Penne Arrabbiata Pasta</h5>
+              <div id="food13">
+                <h5 class="card-title">Penne Arrabbiata Pasta</h5>
+              </div>
               <p class="card-text">
                 Tossed with red wine, marinara, lots of garlic, and tender
                 pieces of chicken.
@@ -540,7 +669,17 @@
                   <p class="card-text fw-bold">RM16.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type13"
+                    id="type13"
+                    value="16.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(13)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -554,7 +693,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Spaghetti Aglio Olio</h5>
+              <div id="food14">
+                <h5 class="card-title">Spaghetti Aglio Olio</h5>
+              </div>
               <p class="card-text">
                 A traditional Italian pasta dish with sliced garlic that is
                 sautéed in olive oil, then tossed with spaghetti, red pepper
@@ -565,7 +706,17 @@
                   <p class="card-text fw-bold">RM13.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type14"
+                    id="type14"
+                    value="13.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(14)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -580,7 +731,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Spaghetti Carbonara</h5>
+              <div id="food15">
+                <h5 class="card-title">Spaghetti Carbonara</h5>
+              </div>
               <p class="card-text">
                 Silky spaghetti with crispy pancetta in a super creamy and
                 cheesy sauce.
@@ -590,7 +743,17 @@
                   <p class="card-text fw-bold">RM13.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type15"
+                    id="type15"
+                    value="13.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(15)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -614,7 +777,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Cheesy BBQ Chicken Pizza</h5>
+              <div id="food16">
+                <h5 class="card-title">Cheesy BBQ Chicken Pizza</h5>
+              </div>
               <p class="card-text">
                 Slathered with BBQ sauce and sprinkled with tons of mozzarella
                 and gouda.
@@ -624,7 +789,17 @@
                   <p class="card-text fw-bold">RM17.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type16"
+                    id="type16"
+                    value="17.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(16)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -638,7 +813,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Hawaiian Chicken Pizza</h5>
+              <div id="food17">
+                <h5 class="card-title">Hawaiian Chicken Pizza</h5>
+              </div>
               <p class="card-text">
                 Layered with smokey bbq sauce, chicken pieces, creamy
                 mozzarella, sweet pineapple, and flavorful red onion and
@@ -649,7 +826,17 @@
                   <p class="card-text fw-bold">RM17.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type17"
+                    id="type17"
+                    value="17.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(17)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -663,7 +850,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Spicy Sausage and Pepperoni Pizza</h5>
+              <div id="food18">
+                <h5 class="card-title">Spicy Sausage and Pepperoni Pizza</h5>
+              </div>
               <p class="card-text">
                 Spicy sausage and pepperoni pizza with pizza dough, Marinara
                 sauce, Mozzarella cheese, spicy Italian sausage, pepperoni
@@ -674,7 +863,17 @@
                   <p class="card-text fw-bold">RM32.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type18"
+                    id="type18"
+                    value="32.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(18)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -698,7 +897,9 @@
               alt=""
             />
             <div class="card-body">
-              <h5 class="card-title">Chunky Potato Soup</h5>
+              <div id="food19">
+                <h5 class="card-title">Chunky Potato Soup</h5>
+              </div>
               <p class="card-text">
                 Loaded with chunky potatoes, bacon, corn, and two kinds of
                 cheese for a creamy, filling soup.
@@ -708,7 +909,17 @@
                   <p class="card-text fw-bold">RM8.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type19"
+                    id="type19"
+                    value="8.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(19)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -718,14 +929,26 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Green Pea Soup.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Green Pea Soup</h5>
+              <div id="food20">
+                <h5 class="card-title">Green Pea Soup</h5>
+              </div>
               <p class="card-text">Vegetarian and dairy-free.</p>
               <div class="row align-items-center">
                 <div class="col">
                   <p class="card-text fw-bold">RM6.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type20"
+                    id="type20"
+                    value="6.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(20)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -735,7 +958,9 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Mushroom Soup.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Mushroom Soup</h5>
+              <div id="food21">
+                <h5 class="card-title">Mushroom Soup</h5>
+              </div>
               <p class="card-text">
                 Made with a full pound of fresh mushrooms.
               </p>
@@ -744,7 +969,17 @@
                   <p class="card-text fw-bold">RM7.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type21"
+                    id="type21"
+                    value="7.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(21)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -764,13 +999,25 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Mineral Water.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Drinking Water</h5>
+              <div id="food22">
+                <h5 class="card-title">Drinking Water</h5>
+              </div>
               <div class="row align-items-center">
                 <div class="col">
                   <p class="card-text fw-bold">RM1.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type22"
+                    id="type22"
+                    value="1.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(22)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -780,13 +1027,25 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Lemonade.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Lemonade</h5>
+              <div id="food23">
+                <h5 class="card-title">Lemonade</h5>
+              </div>
               <div class="row align-items-center">
                 <div class="col">
                   <p class="card-text fw-bold">RM4.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type23"
+                    id="type23"
+                    value="4.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(23)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -796,14 +1055,26 @@
           <div class="card h-100">
             <img class="card-img-top" src="/image/Ribena Lemon.png" alt="" />
             <div class="card-body">
-              <h5 class="card-title">Ribena Lemon</h5>
+              <div id="food24">
+                <h5 class="card-title">Ribena Lemon</h5>
+              </div>
 
               <div class="row align-items-center">
                 <div class="col">
                   <p class="card-text fw-bold">RM3.00</p>
                 </div>
                 <div class="col">
-                  <div class="btn btn-outline-dark">Order</div>
+                  <input
+                    type="radio"
+                    name="type24"
+                    id="type24"
+                    value="3.00"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                  <div class="btn btn-outline-dark" onclick="choose(24)">
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
@@ -819,14 +1090,26 @@
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Waterlemon Lemonade</h5>
+                <div id="food25">
+                  <h5 class="card-title">Waterlemon Lemonade</h5>
+                </div>
 
                 <div class="row align-items-center">
                   <div class="col">
                     <p class="card-text fw-bold">RM6.00</p>
                   </div>
                   <div class="col">
-                    <div class="btn btn-outline-dark">Order</div>
+                    <input
+                      type="radio"
+                      name="type25"
+                      id="type25"
+                      value="6.00"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    <div class="btn btn-outline-dark" onclick="choose(25)">
+                      Order
+                    </div>
                   </div>
                 </div>
               </div>
@@ -836,14 +1119,26 @@
             <div class="card h-100">
               <img class="card-img-top" src="/image/orangejuice.png" alt="" />
               <div class="card-body">
-                <h5 class="card-title">Orange Juice</h5>
+                <div id="food26">
+                  <h5 class="card-title">Orange Juice</h5>
+                </div>
 
                 <div class="row align-items-center">
                   <div class="col">
                     <p class="card-text fw-bold">RM5.00</p>
                   </div>
                   <div class="col">
-                    <div class="btn btn-outline-dark">Order</div>
+                    <input
+                      type="radio"
+                      name="type26"
+                      id="type26"
+                      value="5.00"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    <div class="btn btn-outline-dark" onclick="choose(26)">
+                      Order
+                    </div>
                   </div>
                 </div>
               </div>
@@ -858,14 +1153,26 @@
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Tropical Smoothie</h5>
+                <div id="food27">
+                  <h5 class="card-title">Tropical Smoothie</h5>
+                </div>
 
                 <div class="row align-items-center">
                   <div class="col">
                     <p class="card-text fw-bold">RM8.00</p>
                   </div>
                   <div class="col">
-                    <div class="btn btn-outline-dark">Order</div>
+                    <input
+                      type="radio"
+                      name="type27"
+                      id="type27"
+                      value="8.00"
+                      checked
+                    />
+                    <span class="checkmark"></span>
+                    <div class="btn btn-outline-dark" onclick="choose(27)">
+                      Order
+                    </div>
                   </div>
                 </div>
               </div>
