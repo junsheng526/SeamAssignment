@@ -4,11 +4,10 @@
 }
 
 .carousel-caption {
-    margin-bottom: 27.5vh;
+    margin-bottom: 35vh;
 }
 
-.carousel-caption h5{
-    font-size: 45px;
+.carousel-caption h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
@@ -25,4 +24,8 @@
     border-width: 2px;
 }
 
-
+@media(max-width:768px) {
+    .ul-bg {
+        background-color: black;
+    }
+}

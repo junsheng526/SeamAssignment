@@ -42,7 +42,7 @@
             </button>
     
             <!-- main html navigation link start  -->
-            <div class="collapse navbar-collapse flex-grow-0" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse ul-bg flex-grow-0" id="collapsibleNavbar">
               <ul class="navbar-nav text-center list-unstyled">
                 <li class="nav-item px-4">
                   <a class="nav-link text-white" href="/html/menu.html">Menu</a>
@@ -58,7 +58,7 @@
                 </li>
               </ul>
               <!-- icon button start -->
-              <div>
+              <div class="text-center">
                 <!-- add to cart icon  -->
                 <button type="button" class="btn btn-labeled text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasRight">
                   <span class="btn-label"><i class="fa-solid fa-cart-shopping"></i></span>
@@ -77,6 +77,48 @@
             <!-- main html navigation link end  -->
           </div>
         </nav>
+
+        <!-- cart offcanvas start-->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Order Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="items" id="items"></ul>
+        <h3 id="total" style="text-align: right">Total: RM 0</h3>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary text-para">Check Out</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas end  -->
+
+    <!-- offcanvas start-->
+
+    <div class="offcanvas offcanvas-bottom"
+      style="height: fit-content; width: fit-content"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Talk with MoonStreet ChatBot
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="chatBot">
+          <iframe id="chatBox" width="350" height="430" allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/c2abacae-163c-47b3-ab0b-a205b2f6a457">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas end  -->
   
     <div
       id="carouselExampleCaptions"
@@ -128,17 +170,17 @@
             
           </video>
           <div class="carousel-caption">
-            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+            <h1>
               Moonstreet Restaurant
-            </h5>
+            </h1>
             <p
               class="animated bounceInLeft d-none d-md-block"
               style="animation-delay: 2s"
             >
               Feels like home, tastes like paradise.
             </p>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Browse Menu</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Reservation</a>
+            <a class="btn btn-outline-light m-2" href="#">Browse Menu</a>
+            <a class="btn btn-outline-light m-2" href="#">Reservation</a>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="10000">
@@ -156,17 +198,17 @@
             />
           </video>
           <div class="carousel-caption">
-            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+            <h1 class="animated bounceInRight">
               good food, good life
-            </h5>
+            </h1>
             <p
               class="animated bounceInLeft d-none d-md-block"
               style="animation-delay: 2s"
             >
               Start your day with enjoying our food.
             </p>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Browse Menu</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Reservation</a>
+            <a class="btn btn-outline-light m-2" href="#">Browse Menu</a>
+            <a class="btn btn-outline-light m-2" href="#">Reservation</a>
           </div>
         </div>
 
@@ -185,17 +227,17 @@
             />
           </video>
           <div class="carousel-caption">
-            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+            <h1 class="animated bounceInRight">
               western cuisine
-            </h5>
+            </h1>
             <p
               class="animated bounceInLeft d-none d-md-block"
               style="animation-delay: 2s"
             >
               More than 30 western food in Moonstreet.
             </p>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Browse Menu</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Reservation</a>
+            <a class="btn btn-outline-light m-2" href="#">Browse Menu</a>
+            <a class="btn btn-outline-light m-2" href="#">Reservation</a>
           </div>
         </div>
 
@@ -210,17 +252,17 @@
             <source class="h-100" src="/video/Food Reel.mp4" type="video/mp4" />
           </video>
           <div class="carousel-caption">
-            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+            <h1 class="animated bounceInRight">
               Fresh and delicious
-            </h5>
+            </h1>
             <p
               class="animated bounceInLeft d-none d-md-block"
               style="animation-delay: 2s"
             >
               Imported meat and seafood daily to make sure the quality of food.
             </p>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Browse Menu</a>
-            <a class="btn btn-outline-light btn-lg m-2" href="#">Reservation</a>
+            <a class="btn btn-outline-light m-2" href="#">Browse Menu</a>
+            <a class="btn btn-outline-light m-2" href="#">Reservation</a>
           </div>
         </div>
       </div>

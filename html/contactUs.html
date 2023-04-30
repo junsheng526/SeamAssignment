@@ -33,37 +33,37 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- main html navigation link start  -->
-        <div class="collapse navbar-collapse flex-grow-0" id="collapsibleNavbar">
-          <ul class="navbar-nav text-center list-unstyled">
-            <li class="nav-item px-4">
-              <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-primary" href="/html/reservation.html">Reservation</a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-primary" href="/html/aboutUs.html">About Us</a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-primary" href="/html/contactUs.html">Contact Us</a>
-            </li>
-          </ul>
-          <!-- icon button start -->
-          <div>
-            <!-- add to cart icon  -->
-            <button type="button" class="btn btn-labeled" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasRight">
-              <span class="btn-label"><i class="fa-solid fa-cart-shopping"></i></span>
-            </button>
-            <!-- chat bot icon  -->
-            <button type="button" class="btn btn-labeled" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <span class="btn-label"><i class="fa-solid fa-comments"></i></span>
-            </button>
-            <!-- profile icon  -->
-            <button type="button" class="btn btn-labeled">
-              <span class="btn-label"><a class="dropdown-item" href="/html/login.html"><i class="fa-solid fa-user"></i></a></span>
-            </button>
-          </div>
+            <!-- main html navigation link start  -->
+            <div class="collapse navbar-collapse ul-bg flex-grow-0" id="collapsibleNavbar">
+              <ul class="navbar-nav text-center list-unstyled">
+                <li class="nav-item px-4">
+                  <a class="nav-link text-primary" href="/html/menu.html">Menu</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link text-primary" href="/html/reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link text-primary" href="/html/aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link text-highlight" href="/html/contactUs.html">Contact Us</a>
+                </li>
+              </ul>
+              <!-- icon button start -->
+              <div class="text-center">
+                <!-- add to cart icon  -->
+                <button type="button" class="btn btn-labeled text-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasRight">
+                  <span class="btn-label"><i class="fa-solid fa-cart-shopping"></i></span>
+                </button>
+                <!-- chat bot icon  -->
+                <button type="button" class="btn btn-labeled text-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="btn-label"><i class="fa-solid fa-comments"></i></span>
+                </button>
+                <!-- profile icon  -->
+                <button type="button" class="btn btn-labeled text-primary">
+                  <span class="btn-label"><a class="dropdown-item" href="/html/login.html"><i class="fa-solid fa-user"></i></a></span>
+                </button>
+              </div>
           <!-- icon button end -->
         </div>
         <!-- main html navigation link end  -->
@@ -81,7 +81,7 @@
         <ul class="items" id="items"></ul>
         <h3 id="total" style="text-align: right">Total: RM 0</h3>
         <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary text-para">Check Out</button>
+          <button class="btn btn-info text-white text-para">Check Out</button>
         </div>
       </div>
     </div>
@@ -117,24 +117,25 @@
     <div class="container-lg pt-5">
       <div class="row justify-content-evenly">
         <div class="col-10 col-lg-5 col-md-5">
+
+          <img
+            class="img-fluid"
+            src="/image/customer-service.png"
+            alt="1.jpg"
+          />
+        </div>
+        <div class="col-10 col-lg-5 col-md-5 mt-5 mt-lg-0">
           <h1>
-            <div class="display-5">GET IN TOUCH</div>
+            <div class="display-5 text-info">GET IN TOUCH</div>
           </h1>
           <p class="fs-6 fw-light text-justify" style="text-align: justify;">
             With our extensive expertise offering bespoke carbon neutral
             technologies & financing solutions in the region,
-            <span class="text-primary fw-bold">MoonStreet</span> stands at the
+            <span class="text-info">MoonStreet</span> stands at the
             forefront in providing green energy solutions to meet your renewable
             energy goals. We help every client find the best approach to save
             money and the planet.
           </p>
-          <img
-            class="img-fluid"
-            src="/image/moonstreet restaurant.jpg"
-            alt="1.jpg"
-          />
-        </div>
-        <div class="col-10 col-lg-5 col-md-5">
           <form>
             <!-- your name  -->
             <div class="row">
@@ -147,27 +148,29 @@
             </div>
 
             <div class="row">
-              <div class="col">
+
+            </div>
+
+            <!-- PhoneNumber -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
                 <div class="mb-3">
+                  <label for="service" class="form-label">Service</label>
                   <select
                     class="form-select mb-3"
                     name="service"
                     id="service"
                     required
                   >
-                    <option value="Services" disabled selected>Service</option>
-                    <option value="Complaint">Complaint</option>
-                    <option value="Review">Review</option>
+                    <option value="Complaint" selected>Feedback</option>
+                    <option value="Review">Complaint</option>
                     <option value="Supplier">Supplier</option>
                     <option value="Others">Others</option>
                   </select>
                 </div>
               </div>
-            </div>
 
-            <!-- PhoneNumber -->
-            <div class="row">
-              <div class="col">
+              <div class="col-12 col-lg-6">
                 <div class="mb-3">
                   <label for="phone" class="form-label">Phone Number</label>
                   <div class="input-group mb-3">
@@ -211,7 +214,7 @@
               </div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button type="submit" class="btn btn-primary align">
+              <button type="submit" class="btn btn-info text-white align">
                 Submit
               </button>
             </div>
@@ -226,7 +229,7 @@
         <div class="container">
           <div class="row justify-content-evenly mt-5">
             <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="row">
+              <div class="d-flex justify-content-center row">
 
                 <!-- first col logo -->
                 <div class="col-4">
@@ -237,8 +240,8 @@
 
                 <!-- second col title with icon  -->
                 <div class="col-10 col-md-10 col-lg-8">
-                  <div class="fw-bold text-uppercase fs-4">MoonStreet</div>
-                  <p>
+                  <div class="fw-bold text-uppercase fs-4 text-lg-start text-center text-info">MoonStreet</div>
+                  <p class="text-lg-start text-center">
                     GOOD MEALS &nbsp;<span style="color: black">|</span>
                     &nbsp;PERFECT SERVICES
                     <span style="color: black">|</span> COMFORTABLE ENVIRONMENT
@@ -246,7 +249,7 @@
                     CHEF
                   </p>
                   <!-- icon button  -->
-                  <ul class="list-inline">
+                  <ul class="list-inline text-lg-start text-center">
                     <li class="list-inline-item">
                       <a href="https://www.youtube.com/" class="text-para" title="YouTube">
                         <i class="fab fa-youtube" style="font-size: 24px"></i>
@@ -275,8 +278,8 @@
 
             <!-- navigation link  -->
             <div class="col-12 col-md-12 col-lg-2">
-              <h6 class="text-uppercase text-heading mb-3">Restaurant</h6>
-              <ul class="list-unstyled">
+              <h6 class="text-uppercase text-heading mb-3 text-lg-start text-center text-info">Restaurant</h6>
+              <ul class="list-unstyled text-lg-start text-center">
                 <li>
                   <a href="/html/project.html" class="text-para text-uppercase"
                     >Menu</a

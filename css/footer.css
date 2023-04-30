@@ -55,3 +55,35 @@
 .btn-label:hover {
     color: #6EC1E4 !important;
 }
+
+.text-para:hover {
+    color: #6EC1E4;
+}
+
+.text-highlight::after {
+    opacity: 1;
+    transition: all 1s;
+    content: "";
+    position: absolute;
+    background-color: #6EC1E4;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+}
+
+a.text-highlight {
+    color: #6EC1E4;
+}
+
+.col-container {
+    display: table;
+    /* Make the container element behave like a table */
+    width: 100%;
+    /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell;
+    /* Make elements inside the container behave like table cells */
+}
