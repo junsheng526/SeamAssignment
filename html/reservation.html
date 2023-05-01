@@ -135,8 +135,58 @@
             and experience the best dining at
             <span class="text-info">MoonStreet</span>. We offers a
             unique dining experience that combines exceptional food and drinks,
-            welcoming ambiance, and excellent service.
+            welcoming ambiance, and excellent service. 
+            <a class="text-info" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Click me to check the availability before you reserve!</a>
           </p>
+          
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Booked Time Slot</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">No. of Pax</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>2023-03-22</td>
+                        <td>12:34</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>2023-04-18</td>
+                        <td>12:12</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>2023-10-08</td>
+                        <td>18:44</td>
+                        <td>6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <form class="needs-validation" novalidate>
             <!-- your name  -->
             <div class="row">
