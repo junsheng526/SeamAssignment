@@ -14,6 +14,8 @@ firebase.initializeApp(firebaseConfig);
 // Get a reference to the database service
 var database = firebase.database();
 
+const user = firebase.auth().currentUser;
+
 // // Get references to the form elements
 // var nameInput = document.getElementById("name");
 // var serviceInput = document.getElementById("service");
@@ -105,6 +107,31 @@ form.addEventListener('submit', (event) => {
   // add the reservation data to the "Reservation" collection in the database
   database.ref('ContactMessage').push(newContact)
     .then(() => {
+
+      // Initialize service id and template id from EmailJS
+      const serviceID = "service_hbm7xbi";
+
+      const templateID = "template_uw40a18";
+
+      // Declare template input id
+      var params = {
+        nameInput: document.getElementById("name").value,
+        emailInput: document.getElementById("email").value,
+        phoneInput: document.getElementById("phone").value,
+        serviceInput: document.getElementById("service").value,
+        messageInput: document.getElementById("message").value,
+      };
+
+      // Send message
+      emailjs.send(serviceID, templateID, params)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Confirmation email sent! Check your email.");
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert("Failed to send confirmation email....");
+      });
+
       // reset the form
       form.reset();
       console.log('Message send successfully!');
