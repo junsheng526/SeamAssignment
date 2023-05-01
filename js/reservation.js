@@ -13,8 +13,37 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
+var db = firebase.database();
+
+const reservationRef = db.ref('Reservation');
+
 // select the form element
 const form = document.querySelector('form');
+
+let tableBody = document.querySelector("tbody");
+
+
+// Read and Display food Data in table
+reservationRef.on('value', (snapshot) => {
+  const reservations = snapshot.val();
+  
+  tableBody.innerHTML = "";
+
+  let i = 1;
+
+  for(reservation in reservations){
+    let tr = `
+    <tr data-id = ${reservation} >
+        <th scope="row">${i}</td>
+        <td>${reservations[reservation].date}</td>
+        <td>${reservations[reservation].time}</td>
+        <td>${reservations[reservation].pax}</td>
+    </tr>
+    `
+    tableBody.innerHTML += tr;
+    i++;
+  }
+});
 
 // listen for form submission event
 form.addEventListener('submit', (event) => {
