@@ -14,6 +14,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Initialize variables
 const auth = firebase.auth();
+const nameField = document.getElementById('uname');
 const emailField = document.getElementById('exampleInputEmail3');
 const passwordField = document.getElementById('exampleInputPassword3');
 
@@ -43,8 +44,9 @@ const form = document.querySelector('form');
 
 // listen for form submission event
 form.addEventListener('submit', (event) => {
-  // prevent the default form submission behavior
-  event.preventDefault();
+    // prevent the default form submission behavior
+    event.preventDefault();
+    const name = nameField.value;
     const email = emailField.value;
     const password = passwordField.value;
 
@@ -61,6 +63,8 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
+
+
     // Create a new user account using Firebase Authentication
     auth.createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
@@ -68,7 +72,7 @@ form.addEventListener('submit', (event) => {
             const user = userCredential.user;
             console.log('User account created:', user);
             alert('User Created!');
-            window.location.assign("/html/login.html");
+            window.location.assign("../index.html");
             // TODO: You can add any further actions you want to take after a user account is created
         })
         .catch((error) => {
