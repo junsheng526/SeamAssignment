@@ -35,7 +35,14 @@ firebase.initializeApp(firebaseConfig);
 // Initialize variables
 const auth = firebase.auth()
 
-function forgotPass() {
+// select the form element
+const form = document.querySelector('form');
+
+// listen for form submission event
+form.addEventListener('submit', (event) => {
+  // prevent the default form submission behavior
+  event.preventDefault();
+
   email = document.getElementById('email').value
 
   if (validate_email(email) == false) {
@@ -57,8 +64,7 @@ function forgotPass() {
       alert(errorMessage);
     });
 
-
-}
+});
 
 // Validate Functions
 function validate_email(email) {

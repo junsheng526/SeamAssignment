@@ -38,8 +38,13 @@ const passwordField = document.getElementById('exampleInputPassword3');
         })
 })()
 
+// select the form element
+const form = document.querySelector('form');
 
-function register() {
+// listen for form submission event
+form.addEventListener('submit', (event) => {
+  // prevent the default form submission behavior
+  event.preventDefault();
     const email = emailField.value;
     const password = passwordField.value;
 
@@ -73,4 +78,6 @@ function register() {
             console.error('Error creating user account:', errorCode, errorMessage);
             // TODO: You can add any further error handling you want to do here
         });
-}
+
+
+});

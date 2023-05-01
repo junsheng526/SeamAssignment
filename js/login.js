@@ -35,8 +35,14 @@ firebase.initializeApp(firebaseConfig);
 // Initialize variables
 const auth = firebase.auth();
 
-// Set up our login function
-function login() {
+const form = document.querySelector('form');
+
+
+// listen for form submission event
+form.addEventListener('submit', (event) => {
+  // prevent the default form submission behavior
+  event.preventDefault();
+
   // Get all our input fields
   email = document.getElementById('email').value;
   password = document.getElementById('password').value;
@@ -63,7 +69,9 @@ function login() {
       alert(error_message);
     })
 
-}
+
+
+});
 
 // Validate Functions
 function validate_email(email) {
