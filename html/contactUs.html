@@ -136,7 +136,7 @@
             energy goals. We help every client find the best approach to save
             money and the planet.
           </p>
-          <form>
+          <form class="needs-validation" novalidate>
             <!-- your name  -->
             <div class="row">
               <div class="col">
@@ -145,10 +145,6 @@
                   <input type="text" class="form-control" id="name" required />
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-
             </div>
 
             <!-- PhoneNumber -->
@@ -197,6 +193,7 @@
                     class="form-control"
                     id="email"
                     placeholder="name@example.com"
+                    required
                   />
                 </div>
               </div>
@@ -209,6 +206,7 @@
                     class="form-control"
                     id="message"
                     rows="3"
+                    required
                   ></textarea>
                 </div>
               </div>
