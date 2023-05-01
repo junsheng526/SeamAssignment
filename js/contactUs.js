@@ -124,13 +124,13 @@ form.addEventListener('submit', (event) => {
 
       // Send message
       emailjs.send(serviceID, templateID, params)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert("Confirmation email sent! Check your email.");
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert("Failed to send confirmation email....");
-      });
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          // alert("Confirmation email sent! Check your email.");
+        }, function (error) {
+          console.log('FAILED...', error);
+          alert("Failed to send confirmation email....");
+        });
 
       // reset the form
       form.reset();
