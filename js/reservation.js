@@ -19,19 +19,19 @@ const reservationRef = db.ref('Reservation');
 
 // select the form element
 const form = document.querySelector('form');
-
+const pattern = /^01[0-9]{1}[0-9]{7}$/;
 let tableBody = document.querySelector("tbody");
 
 
 // Read and Display food Data in table
 reservationRef.on('value', (snapshot) => {
   const reservations = snapshot.val();
-  
+
   tableBody.innerHTML = "";
 
   let i = 1;
 
-  for(reservation in reservations){
+  for (reservation in reservations) {
     let tr = `
     <tr data-id = ${reservation} >
         <th scope="row">${i}</td>
@@ -59,6 +59,12 @@ form.addEventListener('submit', (event) => {
 
   if (name == "" || phoneNo == "" || date == "" || time == "" || pax == "") {
     alert('Please fill in all the details!');
+    return
+  }
+
+  if (!pattern.test(phoneNo)) {
+    console.log("Phone number is invalid");
+    alert("Phone number is invalid");
     return
   }
 

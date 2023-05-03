@@ -77,6 +77,8 @@ const user = firebase.auth().currentUser;
 // }
 
 const form = document.querySelector('form');
+const pattern = /^01[0-9]{1}[0-9]{7}$/;
+// const pattern2 = /^0[1-9]\d{8}$/;
 
 form.addEventListener('submit', (event) => {
   // prevent the default form submission behavior
@@ -91,6 +93,12 @@ form.addEventListener('submit', (event) => {
 
   if (nameInput == "" || serviceInput == "" || phoneInput == "" || emailInput == "" || messageInput == "") {
     alert('Please fill in all the details!');
+    return
+  }
+
+  if (!pattern.test(phoneInput)) {
+    console.log("Phone number is invalid");
+    alert("Phone number is invalid");
     return
   }
 
